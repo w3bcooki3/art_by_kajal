@@ -3,81 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art by Kajal</title>
-
-    <!-- Description: Provides a summary of the page for search results. Aim for 150-160 characters. -->
-    <meta name="description" content="Discover Kajal's exclusive collection of digital masterpieces. Explore groundbreaking abstract, portrait, and conceptual art from millionaire artists.">
-    
-    <!-- Robots Meta Tag: Controls search engine crawling and indexing. "index, follow" is standard. -->
-    <meta name="robots" content="index, follow">
-    
-    <!-- Canonical URL: Prevents duplicate content issues by specifying the preferred version of a page. -->
-    <link rel="canonical" href="https://w3bcookie.github.io/art_by_kajal"> 
-
-    <!-- Favicon: Icon displayed in browser tabs. Replace with your actual favicon. -->
-    <link rel="icon" href="https://w3bcookie.github.io/art_by_kajal/media/its_me.png" type="image/x-icon">
-
-    <!-- OPEN GRAPH (OG) META TAGS FOR SOCIAL SHARING (Facebook, LinkedIn, etc.) -->
-    <!-- These control how your page appears when shared on social media platforms. -->
-    <meta property="og:title" content="Kajal - Exclusive Digital Art Collection & Masterpieces">
-    <meta property="og:description" content="Discover Kajal's exclusive collection of digital masterpieces. Explore groundbreaking abstract, portrait, and conceptual art from millionaire artists.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://w3bcookie.github.io/art_by_kajal">
-    <meta property="og:image" content="https://w3bcookie.github.io/art_by_kajal/media/its_me.png"> <!-- High-quality image (1200x630px recommended) -->
-    <meta property="og:site_name" content="Kajal's Canvas">
-    <meta property="og:locale" content="en_US">
-
-    <!-- TWITTER CARD META TAGS (for Twitter sharing) -->
-    <!-- Similar to Open Graph, but specific for Twitter. -->
-    <meta name="twitter:card" content="summary_large_image"> <!-- Or "summary" for smaller image -->
-    <meta name="twitter:site" content="@yourtwitterhandle"> <!-- Your Twitter handle -->
-    <meta name="twitter:creator" content="@yourtwitterhandle"> <!-- Creator's Twitter handle -->
-    <meta name="twitter:title" content="Kajal - Digital Art for Discerning Collectors">
-    <meta name="twitter:description" content="Explore avant-garde digital art that redefines creativity. Curated masterpieces from leading digital artists.">
-    <meta name="twitter:image" content="https://w3bcookie.github.io/art_by_kajal/media/its_me.png"> <!-- Image optimized for Twitter (800x418px recommended) -->
-
-    <!-- SCHEMA MARKUP (JSON-LD) - FOR ENHANCED SEARCH RESULTS (Rich Snippets) -->
-    <!-- Example for an Organization or WebSite. You can expand this for specific content types (e.g., ImageObject, CreativeWork). -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Kajal Gallery",
-      "url": "https://w3bcookie.github.io/art_by_kajal",
-      "logo": "https://w3bcookie.github.io/art_by_kajal/media/its_me.png",
-      "sameAs": [
-        "https://www.instagram.com/yourKajalprofile/",
-        "https://twitter.com/yourKajalprofile/",
-        "https://www.artstation.com/yourKajalprofile/"
-      ],
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-555-123-4567",
-        "contactType": "Customer Service"
-      },
-      "description": "Kajal represents the pinnacle of digital artistry, showcasing exclusive collections from the world's most innovative digital artists."
-    }
-    </script>
-    
-    <!-- END OF SEO META TAGS -->
-
+    <title>Kajal Art Gallery</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700&display=swap');
-        
-        :root {
-            --primary-gold: #d4af37;
-            --rich-gold: #b8860b;
-            --deep-red: #8b0000;
-            --accent-red: #c41e3a;
-            --luxe-black: #0a0a0a;
-            --charcoal: #1a1a1a;
-            --platinum: #e5e4e2;
-            --pearl-white: #f8f6f0;
-            --shadow-gold: rgba(212, 175, 55, 0.3);
-            --shadow-deep: rgba(0, 0, 0, 0.8);
-            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f7dc6f 50%, #d4af37 100%);
-            --gradient-luxury: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 50%, #2c2c2c 100%);
-        }
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@200;300;400;500&display=swap');
 
         * {
             margin: 0;
@@ -86,536 +14,290 @@
         }
 
         body {
-            background: var(--luxe-black);
-            color: var(--platinum);
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
+            font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: #0a0a0a;
+            color: #f5f5f5;
             overflow-x: hidden;
-            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
         }
 
-        /* Luxury background overlay */
-        body::before {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: 
-                radial-gradient(circle at 15% 25%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
-                radial-gradient(circle at 85% 75%, rgba(196, 30, 58, 0.02) 0%, transparent 50%),
-                linear-gradient(135deg, rgba(10, 10, 10, 0.95) 0%, rgba(26, 26, 26, 0.98) 100%);
-            pointer-events: none;
-            z-index: -2;
-        }
-
-        /* Animated background pattern */
-        body::after {
-            content: '';
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="luxury" width="40" height="40" patternUnits="userSpaceOnUse"><circle cx="20" cy="20" r="0.8" fill="%23d4af37" opacity="0.05"/><circle cx="0" cy="0" r="0.5" fill="%23c41e3a" opacity="0.03"/><circle cx="40" cy="40" r="0.5" fill="%23c41e3a" opacity="0.03"/></pattern></defs><rect width="200" height="200" fill="url(%23luxury)"/></svg>');
-            animation: luxuryFloat 30s ease-in-out infinite;
-            pointer-events: none;
-            z-index: -1;
-            opacity: 0.4;
-        }
-
-        @keyframes luxuryFloat {
-            0%, 100% { transform: translateY(0px) rotate(0deg); }
-            33% { transform: translateY(-20px) rotate(1deg); }
-            66% { transform: translateY(20px) rotate(-1deg); }
-        }
-
-        /* PREMIUM NAVIGATION */
-        .navbar {
+        header {
             position: fixed;
             top: 0;
             width: 100%;
-            padding: 25px 0;
-            background: rgba(10, 10, 10, 0.85);
-            backdrop-filter: blur(25px) saturate(180%);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
             z-index: 1000;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            background: rgba(10, 10, 10, 0.85);
+            backdrop-filter: blur(20px) saturate(180%);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .navbar.scrolled {
-            padding: 18px 0;
+        header.scrolled {
             background: rgba(10, 10, 10, 0.95);
-            border-bottom: 1px solid rgba(212, 175, 55, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
         }
 
-        .nav-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px;
+        nav {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            padding: 1.8rem 6%;
+            max-width: 1600px;
+            margin: 0 auto;
         }
 
         .logo {
-            font-family: 'Playfair Display', serif;
-            font-size: 32px;
-            font-weight: 700;
-            color: var(--primary-gold);
-            text-decoration: none;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 400;
+            letter-spacing: 4px;
+            background: linear-gradient(135deg, #ffffff 0%, #b8b8b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            transition: all 0.3s ease;
+        }
+
+        .logo:hover {
+            letter-spacing: 6px;
+        }
+
+        .nav-links {
             display: flex;
-            align-items: center;
-            gap: 15px;
-            transition: all 0.4s ease;
-            letter-spacing: 2px;
-        }
-
-        .logo::before {
-            content: '◆';
-            color: var(--accent-red);
-            font-size: 28px;
-            animation: luxuryPulse 3s ease-in-out infinite;
-        }
-
-        @keyframes luxuryPulse {
-            0%, 100% { transform: scale(1) rotate(0deg); opacity: 1; }
-            50% { transform: scale(1.15) rotate(180deg); opacity: 0.8; }
-        }
-
-        .nav-menu {
-            display: flex;
+            gap: 2rem;
             list-style: none;
-            gap: 50px;
-            align-items: center;
         }
 
-        .nav-link {
-            color: var(--platinum);
+        .nav-links a {
+            color: #f5f5f5;
             text-decoration: none;
-            font-size: 13px;
-            font-weight: 500;
-            text-transform: uppercase;
+            font-size: 0.85rem;
+            font-weight: 300;
             letter-spacing: 2px;
+            text-transform: uppercase;
             position: relative;
-            transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
-            padding: 8px 0;
+            padding: 0.5rem 0;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
-        .nav-link::before {
+        .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
+            bottom: 0;
             left: 50%;
             width: 0;
-            height: 2px;
-            background: var(--gradient-gold);
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             transform: translateX(-50%);
         }
 
-        .nav-link::after {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            width: 0;
-            height: 0;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(212, 175, 55, 0.2) 0%, transparent 70%);
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            transform: translate(-50%, -50%);
-            z-index: -1;
+        .nav-links a:hover {
+            color: #ffffff;
         }
 
-        .nav-link:hover,
-        .nav-link.active {
-            color: var(--primary-gold);
-            transform: translateY(-3px);
-        }
-
-        .nav-link:hover::before,
-        .nav-link.active::before {
+        .nav-links a:hover::after {
             width: 100%;
         }
 
-        .nav-link:hover::after {
-            width: 120%;
-            height: 40px;
-        }
-
-        /* Hamburger menu toggle for mobile */
-        .nav-toggle {
-            display: none; /* Hidden by default on large screens */
+        .menu-toggle {
+            display: none;
             flex-direction: column;
-            justify-content: space-between;
-            width: 30px;
-            height: 20px;
-            background: transparent;
-            border: none;
+            gap: 5px;
             cursor: pointer;
-            padding: 0;
-            position: relative;
-            z-index: 1001; /* Ensure it's above other elements but below modal */
         }
 
-        .nav-toggle .icon-bar {
-            display: block;
-            width: 100%;
+        .menu-toggle span {
+            width: 25px;
             height: 2px;
-            background: var(--primary-gold);
-            border-radius: 1px;
-            transition: all 0.3s ease-in-out;
+            background: #fff;
+            transition: 0.3s;
         }
 
-        /* Hamburger to X animation */
-        .nav-toggle.active .icon-bar:nth-child(1) {
-            transform: translateY(9px) rotate(45deg);
-        }
-        .nav-toggle.active .icon-bar:nth-child(2) {
-            opacity: 0;
-        }
-        .nav-toggle.active .icon-bar:nth-child(3) {
-            transform: translateY(-9px) rotate(-45deg);
-        }
-
-        /* HERO SECTION WITH LUXURY BACKGROUND */
         .hero {
             height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
             position: relative;
-            background: 
-                linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(26, 26, 26, 0.8) 100%),
-                url('./media/main-img.jpg') center/cover;
+            margin-top: 70px;
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
+        .slideshow {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+
+        .slide {
             position: absolute;
             top: 0;
             left: 0;
-            right: 0;
-            bottom: 0;
-            background: 
-                radial-gradient(circle at 30% 70%, rgba(212, 175, 55, 0.15) 0%, transparent 50%),
-                radial-gradient(circle at 70% 30%, rgba(196, 30, 58, 0.1) 0%, transparent 50%),
-                linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(26, 26, 26, 0.8) 100%);
-            animation: heroShimmer 8s ease-in-out infinite;
-        }
-
-        @keyframes heroShimmer {
-            0%, 100% { opacity: 0.8; }
-            50% { opacity: 1; }
-        }
-
-
-        .hero-content {
-            z-index: 3;
-            position: relative;
-            max-width: 900px;
-        }
-
-        .hero-title {
-            margin-top: 500px;
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(4rem, 12vw, 8rem);
-            font-weight: 300;
-            letter-spacing: 8px;
-            margin-bottom: 40px;
-            background: linear-gradient(135deg, #d4af37 0%, #f7dc6f 30%, #d4af37 60%, #b8860b 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            animation: titleReveal 2s cubic-bezier(0.23, 1, 0.32, 1) 0.5s both;
-            text-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
-        }
-
-        .hero-subtitle {
-            font-size: 22px;
-            font-weight: 300;
-            color: var(--platinum);
-            letter-spacing: 3px;
-            margin-bottom: 60px;
-            opacity: 0.9;
-            animation: subtitleReveal 2s cubic-bezier(0.23, 1, 0.32, 1) 1s both;
-        }
-
-        @keyframes subtitleReveal {
-            from {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            to {
-                opacity: 0.9;
-                transform: translateY(0);
-            }
-        }
-
-        .luxury-button {
-            display: inline-flex;
-            align-items: center;
-            gap: 15px;
-            background: var(--gradient-gold);
-            color: var(--luxe-black);
-            padding: 20px 40px;
-            text-decoration: none;
-            border-radius: 60px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 14px;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(212, 175, 55, 0.3);
-            animation: buttonReveal 2s cubic-bezier(0.23, 1, 0.32, 1) 1.5s both;
-        }
-
-        @keyframes buttonReveal {
-            from {
-                opacity: 0;
-                transform: translateY(30px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0) scale(1);
-            }
-        }
-
-        .luxury-button::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
-            transition: left 0.7s ease;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
         }
 
-        .luxury-button:hover {
-            transform: translateY(-5px) scale(1.05);
-            box-shadow: 0 25px 60px rgba(212, 175, 55, 0.4);
+        .slide.active {
+            opacity: 1;
         }
 
-        .luxury-button:hover::before {
-            left: 100%;
+        .slide img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
-        .scroll-indicator {
+        .slide-content {
             position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 15px;
-            animation: scrollFloat 3s ease-in-out infinite;
-            z-index: 3;
+            bottom: 10%;
+            left: 5%;
+            max-width: 600px;
+            z-index: 10;
         }
 
-        .scroll-indicator span {
-            font-size: 11px;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            color: var(--primary-gold);
-            font-weight: 500;
-        }
-
-        .scroll-line {
-            width: 2px;
-            height: 50px;
-            background: linear-gradient(to bottom, var(--primary-gold), transparent);
-            position: relative;
-        }
-
-        .scroll-line::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: -1px;
-            width: 4px;
-            height: 15px;
-            background: var(--primary-gold);
-            border-radius: 2px;
-            animation: scrollIndicator 2s ease-in-out infinite;
-        }
-
-        @keyframes scrollFloat {
-            0%, 100% { transform: translateX(-50%) translateY(0); }
-            50% { transform: translateX(-50%) translateY(-10px); }
-        }
-
-        @keyframes scrollIndicator {
-            0%, 100% { top: 0; opacity: 1; }
-            50% { top: 35px; opacity: 0.3; }
-        }
-
-        /* PORTFOLIO SECTION */
-        .portfolio {
-            padding: 150px 0; /* Full width padding top/bottom */
-            position: relative;
-            width: 100%; /* Ensure it spans full width */
-            overflow: hidden; /* Prevent horizontal scroll from gaps */
-        }
-
-        /* Inner container for content within full-width sections */
-        .section-inner-content {
-            max-width: 1600px; /* Limit content width for text elements */
-            margin: 0 auto; /* Center content */
-            padding: 0 50px; /* Inner padding for sides */
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 100px;
-        }
-
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3.5rem, 8vw, 6rem);
+        .slide-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 4rem;
             font-weight: 300;
-            letter-spacing: 5px;
-            margin-bottom: 30px;
-            background: linear-gradient(135deg, var(--primary-gold) 0%, var(--pearl-white) 50%, var(--primary-gold) 100%);
+            margin-bottom: 1rem;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.6);
+            letter-spacing: 2px;
+            line-height: 1.2;
+            background: linear-gradient(135deg, #ffffff 0%, #e0e0e0 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
 
-        .section-subtitle {
-            font-size: 20px;
-            color: rgba(229, 228, 226, 0.8);
+        .slide-content p {
+            font-size: 1.1rem;
             font-weight: 300;
-            letter-spacing: 2px;
-            max-width: 600px;
-            margin: 0 auto;
+            opacity: 0.95;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            letter-spacing: 1px;
             line-height: 1.6;
         }
 
-        /* LUXURY FILTER TABS */
-        .filter-tabs {
+        .slide-controls {
+            position: absolute;
+            bottom: 5%;
+            right: 5%;
             display: flex;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 80px;
-            flex-wrap: wrap;
+            gap: 1rem;
+            z-index: 10;
         }
 
-        .filter-tab {
-            background: transparent;
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            color: var(--platinum);
-            padding: 16px 32px;
-            font-size: 12px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-radius: 40px;
+        .slide-btn {
+            width: 50px;
+            height: 50px;
+            border: 1px solid rgba(255,255,255,0.5);
+            background: rgba(0,0,0,0.3);
+            color: #fff;
             cursor: pointer;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            position: relative;
-            overflow: hidden;
+            font-size: 1.5rem;
+            transition: all 0.3s;
+            backdrop-filter: blur(5px);
         }
 
-        .filter-tab::before {
+        .slide-btn:hover {
+            background: rgba(255,255,255,0.2);
+        }
+
+        .section {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 4rem;
+            text-align: center;
+            letter-spacing: 3px;
+            position: relative;
+            background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-title::after {
             content: '';
             position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ffffff, transparent);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: transform 0.3s;
+        }
+
+        .video-container:hover {
+            transform: scale(1.02);
+        }
+
+        .video-container video {
+            position: absolute;
             top: 0;
-            left: -100%;
+            left: 0;
             width: 100%;
             height: 100%;
-            background: var(--gradient-gold);
-            transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            object-fit: cover;
         }
 
-        .filter-tab span {
-            position: relative;
-            z-index: 2;
-        }
-
-        .filter-tab:hover,
-        .filter-tab.active {
-            color: var(--luxe-black);
-            border-color: var(--primary-gold);
-            transform: translateY(-5px);
-            box-shadow: 0 12px 30px rgba(212, 175, 55, 0.4);
-        }
-
-        .filter-tab:hover::before,
-        .filter-tab.active::before {
-            left: 0;
-        }
-
-        /* PREMIUM GALLERY GRID - FOR 3 BIG IMAGES IN A ROW */
         .gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Explicitly 3 columns */
-            gap: 40px; 
-            margin-bottom: 100px;
-            padding: 0 50px; /* Padding for the gallery itself */
-            max-width: 100vw; 
-            margin-left: auto; 
-            margin-right: auto; 
+            column-count: 3;
+            column-gap: 1.5rem;
         }
 
         .gallery-item {
+            break-inside: avoid;
+            margin-bottom: 1.5rem;
             position: relative;
-            background: var(--charcoal);
-            border-radius: 25px;
             overflow: hidden;
             cursor: pointer;
-            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-            opacity: 0;
-            transform: translateY(60px);
-        }
-
-        .gallery-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .gallery-item::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(196, 30, 58, 0.05) 100%);
-            opacity: 0;
-            transition: opacity 0.5s ease;
-            z-index: 2;
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 2px;
+            background: #0f0f0f;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .gallery-item:hover {
-            transform: translateY(-20px) scale(1.02);
-            box-shadow: 
-                0 40px 80px rgba(0, 0, 0, 0.6),
-                0 0 0 1px rgba(212, 175, 55, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+            border-color: rgba(255,255,255,0.15);
         }
 
-        .gallery-item:hover::before {
-            opacity: 1;
-        }
-
-        .gallery-image {
+        .gallery-item img {
             width: 100%;
-            height: 550px; /* INCREASED HEIGHT further for big ass images */
-            object-fit: cover; 
-            transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+            display: block;
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+            filter: grayscale(10%);
         }
 
-        .gallery-item:hover .gallery-image {
-            transform: scale(1.15);
+        .gallery-item:hover img {
+            transform: scale(1.08);
+            filter: grayscale(0%);
         }
 
         .gallery-overlay {
@@ -623,2501 +305,960 @@
             bottom: 0;
             left: 0;
             right: 0;
-            background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.7) 40%, rgba(10, 10, 10, 0.95) 100%);
-            padding: 50px 35px 35px;
-            transform: translateY(30px);
-            opacity: 0;
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-            z-index: 3;
+            background: linear-gradient(to top, rgba(0,0,0,0.95) 0%, rgba(0,0,0,0.7) 60%, transparent 100%);
+            padding: 2.5rem 1.5rem 1.5rem;
+            transform: translateY(100%);
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            backdrop-filter: blur(10px);
         }
 
         .gallery-item:hover .gallery-overlay {
             transform: translateY(0);
-            opacity: 1;
         }
 
-        .gallery-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            font-weight: 500;
-            margin-bottom: 12px;
-            color: var(--pearl-white);
+        .gallery-overlay h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
             letter-spacing: 1px;
         }
 
-        .gallery-category {
-            font-size: 13px;
-            color: var(--primary-gold);
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-weight: 600;
-        }
-
-        .gallery-price {
-            font-size: 18px;
-            color: var(--pearl-white);
+        .gallery-overlay p {
+            font-size: 0.85rem;
+            opacity: 0.7;
+            letter-spacing: 1px;
             font-weight: 300;
-            margin-top: 8px;
-            letter-spacing: 1px;
         }
 
-        /* LUXURY MODAL */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 3000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.97);
-            backdrop-filter: blur(20px) saturate(180%);
-            animation: modalFadeIn 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        .grid-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
         }
 
-        @keyframes modalFadeIn {
-            from { 
-                opacity: 0; 
-                backdrop-filter: blur(0px);
-            }
-            to { 
-                opacity: 1; 
-                backdrop-filter: blur(20px) saturate(180%);
-            }
-        }
-
-        .modal-content {
+        .grid-item {
             position: relative;
-            margin: 2% auto;
-            width: 95%;
-            max-width: 1200px;
-            height: 96vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            animation: modalSlideIn 0.6s cubic-bezier(0.23, 1, 0.32, 1) 0.1s both;
-        }
-
-        @keyframes modalSlideIn {
-            from {
-                opacity: 0;
-                transform: scale(0.8) translateY(50px);
-            }
-            to {
-                opacity: 1;
-                transform: scale(1) translateY(0);
-            }
-        }
-
-        .modal-image-container {
-            position: relative;
-            max-width: 100%;
-            max-height: 85%;
-            border-radius: 20px;
             overflow: hidden;
-            box-shadow: 
-                0 50px 100px rgba(0, 0, 0, 0.8),
-                0 0 0 1px rgba(212, 175, 55, 0.2),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
+            aspect-ratio: 1;
+            border: 1px solid rgba(255,255,255,0.1);
+            cursor: pointer;
         }
 
-        .modal-image-container::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 30%, rgba(196, 30, 58, 0.05) 100%);
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        .modal img {
+        .grid-item img, .grid-item video {
             width: 100%;
             height: 100%;
-            object-fit: contain; /* Keep contain for the modal image so it doesn't get cropped */
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .grid-item:hover img, .grid-item:hover video {
+            transform: scale(1.1);
+        }
+
+        .gif-showcase {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .gif-item {
+            position: relative;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .gif-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .gif-item img {
+            width: 100%;
             display: block;
         }
 
-        .modal-info {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.8) 60%, rgba(0, 0, 0, 0.95) 100%);
-            padding: 60px 40px 30px;
-            color: var(--pearl-white);
-            z-index: 2;
-            transform: translateY(100%);
-            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        .gif-caption {
+            padding: 1rem;
+            background: rgba(0,0,0,0.8);
         }
 
-        .modal:hover .modal-info {
-            transform: translateY(0);
+        .gif-caption h3 {
+            font-size: 1rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
         }
 
-        .modal-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 500;
-            margin-bottom: 10px;
-            color: var(--primary-gold);
-        }
-
-        .modal-category {
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            color: var(--platinum);
-            margin-bottom: 15px;
-        }
-
-        .modal-description {
-            font-size: 16px;
-            line-height: 1.6;
-            color: rgba(248, 246, 240, 0.9);
-            margin-bottom: 20px;
-        }
-
-        .modal-price {
-            font-size: 24px;
-            font-weight: 300;
-            color: var(--primary-gold);
-            letter-spacing: 1px;
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 30px;
-            right: 40px;
-            color: var(--pearl-white);
-            font-size: 40px;
-            font-weight: 300;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 3001;
-            width: 60px;
-            height: 60px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            background: rgba(0, 0, 0, 0.5);
-            backdrop-filter: blur(10px);
-        }
-
-        .modal-close:hover {
-            color: var(--primary-gold);
-            transform: scale(1.1) rotate(90deg);
-            background: rgba(212, 175, 55, 0.1);
-        }
-
-        /* NAVIGATION CONTROLS */
-        .modal-nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 60px;
-            height: 60px;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(212, 175, 55, 0.3);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            z-index: 3001;
-        }
-
-        .modal-nav:hover {
-            background: rgba(212, 175, 55, 0.2);
-            border-color: var(--primary-gold);
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        .modal-prev {
-            left: 30px;
-        }
-
-        .modal-next {
-            right: 30px;
-        }
-
-        .modal-nav svg {
-            width: 24px;
-            height: 24px;
-            stroke: var(--pearl-white);
-            transition: stroke 0.3s ease;
-        }
-
-        .modal-nav:hover svg {
-            stroke: var(--primary-gold);
-        }
-
-        /* FEATURED SECTION */
-        .featured {
-            background: var(--gradient-luxury);
-            padding: 150px 0; /* Full width padding on sides */
-            margin: 100px 0;
+        .full-width-feature {
+            width: 100%;
+            height: 70vh;
             position: relative;
-            overflow: hidden; /* Ensure overflow is hidden for inner patterns */
+            overflow: hidden;
+            margin: 3rem 0;
         }
 
-        .featured::before {
-            content: '';
+        .full-width-feature img, .full-width-feature video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .feature-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200"><defs><pattern id="luxury-pattern" width="50" height="50" patternUnits="userSpaceOnUse"><path d="M25,5 L45,25 L25,45 L5,25 Z" fill="none" stroke="%23d4af37" stroke-width="0.5" opacity="0.1"/></pattern></defs><rect width="200" height="200" fill="url(%23luxury-pattern)"/></svg>');
-            opacity: 0.6;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            display: flex;
+            align-items: flex-end;
+            padding: 3rem 5%;
         }
 
-        .featured-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding for content */
+        .feature-text h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+            line-height: 1.2;
+        }
+
+        .feature-text p {
+            font-size: 1.15rem;
+            opacity: 0.9;
+            max-width: 600px;
+            line-height: 1.8;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+        }
+
+        .split-section {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 100px;
-            align-items: center;
+            gap: 0;
+            min-height: 60vh;
+        }
+
+        .split-item {
             position: relative;
-            z-index: 2;
-        }
-
-        .featured-content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 6vw, 5rem);
-            font-weight: 300;
-            color: var(--primary-gold);
-            margin-bottom: 40px;
-            letter-spacing: 3px;
-            line-height: 1.2;
-        }
-
-        .featured-content p {
-            font-size: 20px;
-            line-height: 1.8;
-            color: rgba(229, 228, 226, 0.9);
-            margin-bottom: 50px;
-            font-weight: 300;
-        }
-
-        .featured-image {
-            position: relative;
-            border-radius: 25px;
             overflow: hidden;
-            box-shadow: 
-                0 30px 60px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(212, 175, 55, 0.2);
-            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
         }
 
-        .featured-image::before {
-            content: '';
+        .split-item img, .split-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .split-item:hover img, .split-item:hover video {
+            transform: scale(1.05);
+        }
+
+        .split-overlay {
             position: absolute;
             top: 0;
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, transparent 50%, rgba(196, 30, 58, 0.05) 100%);
-            z-index: 1;
-            opacity: 0;
-            transition: opacity 0.5s ease;
-        }
-
-        .featured-image:hover {
-            transform: scale(1.05) translateY(-10px);
-            box-shadow: 
-                0 50px 100px rgba(0, 0, 0, 0.6),
-                0 0 0 1px rgba(212, 175, 55, 0.4),
-                inset 0 1px 0 rgba(255, 255, 255, 0.1);
-        }
-
-        .featured-image:hover::before {
-            opacity: 1;
-        }
-
-        .featured-image img {
-            width: 100%;
-            height: 900px; /* FURTHER INCREASED HEIGHT for bigger images in Featured section */
-            object-fit: cover;
-            transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .featured-image:hover img {
-            transform: scale(1.1);
-        }
-
-        /* ARTIST STATEMENT SECTION */
-        .artist-statement {
-            padding: 150px 0; /* Full width padding */
+            background: rgba(0,0,0,0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            padding: 2rem;
+            transition: background 0.3s;
         }
 
-        .artist-statement-content {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding */
+        .split-item:hover .split-overlay {
+            background: rgba(0,0,0,0.6);
         }
 
-        .artist-statement-content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 300;
-            color: var(--primary-gold);
-            margin-bottom: 40px;
-            letter-spacing: 2px;
-        }
-
-        .artist-statement-content p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: rgba(229, 228, 226, 0.8);
-            margin-bottom: 30px;
+        .split-overlay h3 {
+            font-size: 2rem;
             font-weight: 300;
         }
 
-        .artist-signature {
-            font-family: 'Playfair Display', serif;
+        .parallax-section {
+            height: 60vh;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 3rem 0;
+        }
+
+        .parallax-content {
+            text-align: center;
+            z-index: 10;
+            background: rgba(0,0,0,0.6);
+            padding: 3rem;
+            backdrop-filter: blur(10px);
+        }
+
+        .parallax-content h2 {
             font-size: 2.5rem;
-            color: var(--accent-red);
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            display: inline-block;
+            font-weight: 300;
+            margin-bottom: 1rem;
         }
 
-        /* LIMITED EDITIONS SECTION */
-        .limited-editions {
-            padding: 150px 0; /* Full width padding on sides */
-            margin: 100px 0;
-            position: relative;
+        .carousel-section {
             overflow: hidden;
-            background: var(--gradient-luxury);
-        }
-
-        .limited-editions::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><polygon points="50,0 100,50 50,100 0,50" fill="none" stroke="%23c41e3a" stroke-width="0.3" opacity="0.05"/></svg>');
-            opacity: 0.5;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .limited-editions-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding for content */
             position: relative;
-            z-index: 2;
+            padding: 3rem 0;
         }
 
-        .limited-editions .section-header {
-            margin-bottom: 80px;
-        }
-
-        .edition-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 50px;
-        }
-
-        .edition-item {
-            background: var(--luxe-black);
-            border-radius: 25px;
-            overflow: hidden;
-            border: 1px solid rgba(212, 175, 55, 0.1);
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+        .carousel-track {
             display: flex;
-            flex-direction: column;
-            opacity: 0;
-            transform: translateY(60px);
+            gap: 1.5rem;
+            animation: scroll 30s linear infinite;
         }
 
-        .edition-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .edition-item:hover {
-            transform: translateY(-15px) scale(1.02);
-            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5), 0 0 0 1px rgba(212, 175, 55, 0.2);
-        }
-
-        .edition-image {
-            width: 100%;
-            height: 500px; /* INCREASED HEIGHT for bigger images in Limited Editions */
-            object-fit: cover;
-            transition: transform 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .edition-item:hover .edition-image {
-            transform: scale(1.1);
-        }
-
-        .edition-info {
-            padding: 30px;
-            text-align: center;
-        }
-
-        .edition-info h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 26px;
-            color: var(--primary-gold);
-            margin-bottom: 10px;
-            letter-spacing: 1px;
-        }
-
-        .edition-info p {
-            font-size: 16px;
-            color: rgba(229, 228, 226, 0.8);
-            margin-bottom: 15px;
-            line-height: 1.6;
-        }
-
-        .edition-price {
-            font-size: 22px;
-            font-weight: 500;
-            color: var(--pearl-white);
-            letter-spacing: 1px;
-            margin-bottom: 20px;
-        }
-
-        /* ABOUT SECTION (EXISTING) */
-        .about {
-            padding: 150px 0; /* Full width padding */
-            text-align: center;
-        }
-
-        .about-content {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding */
-        }
-
-        .about-content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 300;
-            color: var(--primary-gold);
-            margin-bottom: 40px;
-            letter-spacing: 2px;
-        }
-
-        .about-content p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: rgba(229, 228, 226, 0.8);
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-
-        /* PROJECTS SHOWCASE SECTION */
-        .projects-showcase-section {
-            padding: 150px 0; /* Full width padding top/bottom */
-            background: var(--charcoal);
-            margin: 100px 0;
+        .carousel-item {
+            flex: 0 0 300px;
+            height: 400px;
             position: relative;
             overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
         }
 
-        .projects-showcase-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 15% 25%, rgba(196, 30, 58, 0.03) 0%, transparent 50%),
-                        radial-gradient(circle at 85% 75%, rgba(212, 175, 55, 0.02) 0%, transparent 50%);
-            opacity: 0.6;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .projects-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); 
-            gap: 60px;
-            margin: 0 auto; 
-            padding: 0 50px; 
-            position: relative;
-            z-index: 2;
-            width: 100%; 
-        }
-
-        .project-item {
-            background: var(--luxe-black);
-            border-radius: 25px;
-            overflow: hidden;
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(212, 175, 55, 0.15);
-            opacity: 1; 
-            transform: translateY(0);
-            transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1), 
-                        box-shadow 0.5s ease;
-        }
-
-        .project-item.scrolled-in {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
-        }
-
-        .project-item:not(.scrolled-in) {
-            opacity: 0;
-            transform: translateY(60px);
-            transition: none; 
-        }
-
-        .project-item:hover {
-            transform: translateY(-10px) scale(1.01);
-            box-shadow: 0 30px 70px rgba(0, 0, 0, 0.7), 0 0 0 2px var(--primary-gold);
-        }
-
-        .project-image-carousel {
-            position: relative;
-            width: 100%;
-            height: 600px; 
-            overflow: hidden;
-        }
-
-        .project-image-carousel img {
-            position: absolute;
-            top: 0;
-            left: 0;
+        .carousel-item img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            opacity: 0; 
-            transition: opacity 1.2s ease-in-out; 
         }
 
-        .project-image-carousel img.active {
-            opacity: 1; 
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
         }
 
-        .project-content {
-            padding: 35px;
-            text-align: center;
+        .carousel-track:hover {
+            animation-play-state: paused;
         }
 
-        .project-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            color: var(--primary-gold);
-            margin-bottom: 15px;
-            letter-spacing: 1px;
-        }
-
-        .project-content p {
-            font-size: 17px;
-            color: rgba(229, 228, 226, 0.85);
-            line-height: 1.7;
-        }
-
-
-        /* PROJECT HIGHLIGHTS SECTION */
-        .project-highlights-section {
-            padding: 150px 0; 
-            background: var(--luxe-black); 
-            position: relative;
-            overflow: hidden;
-            margin: 100px 0; 
-        }
-
-        .project-highlights-section::before {
-            content: '';
-            position: absolute;
+        .lightbox {
+            display: none;
+            position: fixed;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background: radial-gradient(circle at 80% 20%, rgba(212, 175, 55, 0.03) 0%, transparent 50%),
-                        radial-gradient(circle at 20% 80%, rgba(196, 30, 58, 0.02) 0%, transparent 50%);
-            opacity: 0.5;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .project-highlights-container {
-            margin: 0 auto; 
-            padding: 0 0px; 
-            position: relative;
-            z-index: 2;
-            display: flex;
-            flex-direction: column; 
-            width: 100%; 
-        }
-
-        .project-highlight-item {
-            display: flex;
-            align-items: stretch; 
-            background: var(--charcoal);
-            border-radius: 0px; 
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6); 
-            border: none; 
-            opacity: 0; 
-            transform: translateY(80px); 
-            transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1), 
-                        box-shadow 0.5s ease, 
-                        opacity 0.8s ease; 
-        }
-
-        .project-highlight-item:not(:last-child) {
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1); 
-        }
-        
-        .project-highlight-item.scrolled-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .project-highlight-item:hover {
-            transform: translateY(0px) scale(1.0); 
-            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), inset 0 0 0 2px var(--primary-gold); 
-        }
-        .project-highlight-item:hover:not(:last-child) {
-            border-bottom: 1px solid transparent; 
-        }
-
-
-        .project-highlight-image-wrapper {
-            flex: 1; 
-            height: 800px; 
-            position: relative;
-            overflow: hidden;
-            border-radius: 0; 
-            flex-shrink: 0; 
-        }
-
-        .project-highlight-image-wrapper img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            opacity: 0;
-            transition: opacity 1.5s ease-in-out; 
-        }
-
-        .project-highlight-image-wrapper img.active {
-            opacity: 1;
-        }
-
-        .project-highlight-content {
-            flex: 1; 
-            padding: 60px 80px; 
-            display: flex; 
-            flex-direction: column;
-            justify-content: center; 
-            align-items: flex-start; 
-        }
-
-        .project-highlight-content h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 5vw, 4.5rem);
-            font-weight: 500;
-            color: var(--primary-gold);
-            margin-bottom: 30px;
-            letter-spacing: 1px;
-            line-height: 1.2;
-        }
-
-        .project-highlight-content p {
-            font-size: 19px;
-            color: rgba(248, 246, 240, 0.9);
-            line-height: 1.8;
-            max-width: 700px; 
-        }
-
-        /* Alternating layout using flex-direction */
-        .project-highlight-item:nth-child(even) {
-            flex-direction: row-reverse; 
-        }
-        .project-highlight-item:nth-child(even) .project-highlight-content {
-            align-items: flex-end; 
-            text-align: right;
-        }
-
-        /* ARTIST PROFILE SECTION */
-        .artist-profile-section {
-            padding: 150px 0;
-            background: var(--charcoal); 
-            position: relative;
-            overflow: hidden;
-            margin: 100px 0;
-        }
-
-        .artist-profile-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 10% 10%, rgba(212, 175, 55, 0.04) 0%, transparent 50%),
-                        radial-gradient(circle at 90% 90%, rgba(196, 30, 58, 0.03) 0%, transparent 50%);
-            opacity: 0.7;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .artist-profile-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px;
-            display: grid;
-            grid-template-columns: 0.8fr 1.2fr; 
-            gap: 100px;
-            align-items: center;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .artist-profile-image-wrapper {
-            position: relative;
-            border-radius: 25px;
-            overflow: hidden;
-            box-shadow: 
-                0 30px 60px rgba(0, 0, 0, 0.4),
-                0 0 0 1px rgba(212, 175, 55, 0.2);
-            transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
-            transform: scale(1); 
-        }
-
-        .artist-profile-image-wrapper.scrolled-in {
-             animation: imageSlideIn 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-        }
-
-        @keyframes imageSlideIn {
-            from {
-                opacity: 0;
-                transform: translateX(-50px) scale(0.9);
-            }
-            to {
-                opacity: 1;
-                transform: translateX(0) scale(1);
-            }
-        }
-
-        .artist-profile-image-wrapper img {
-            width: 100%;
-            height: 750px; 
-            object-fit: cover;
-            display: block;
-            filter: grayscale(20%) brightness(0.9); 
-            transition: filter 0.5s ease;
-        }
-
-        .artist-profile-image-wrapper:hover img {
-            filter: grayscale(0%) brightness(1); 
-        }
-
-        .artist-profile-content {
-            opacity: 0; 
-            transform: translateY(50px); 
-            transition: opacity 1.5s ease-out 0.3s, transform 1.5s ease-out 0.3s;
-        }
-
-        .artist-profile-content.scrolled-in {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .artist-profile-content h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: clamp(3rem, 6vw, 5.5rem);
-            font-weight: 300;
-            color: var(--primary-gold);
-            margin-bottom: 40px;
-            letter-spacing: 3px;
-            line-height: 1.2;
-        }
-
-        .artist-profile-content p {
-            font-size: 20px;
-            line-height: 1.8;
-            color: rgba(229, 228, 226, 0.9);
-            margin-bottom: 30px;
-            font-weight: 300;
-        }
-
-        .artist-profile-signature {
-            font-family: 'Playfair Display', serif;
-            font-size: 3rem;
-            color: var(--accent-red);
-            margin-top: 50px;
-            padding-top: 30px;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            display: inline-block;
-        }
-
-
-        /* FOOTER (EXISTING) */
-        .footer {
-            background: var(--gradient-luxury);
-            padding: 100px 0 50px; /* Full width padding */
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23d4af37" opacity="0.1"/></svg>');
-            opacity: 0.3;
-        }
-
-        .footer-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding */
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 80px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .footer-section h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            color: var(--primary-gold);
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            color: rgba(229, 228, 226, 0.8);
-            text-decoration: none;
-            line-height: 1.8;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            color: rgba(229, 228, 226, 0.6);
-            font-size: 14px;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* Video Gallery Section */
-        .video-gallery-section {
-            padding: 150px 0;
-            background: var(--charcoal);
-            margin: 100px 0;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .video-gallery-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: radial-gradient(circle at 10% 90%, rgba(196, 30, 58, 0.03) 0%, transparent 50%),
-                        radial-gradient(circle at 90% 10%, rgba(212, 175, 55, 0.02) 0%, transparent 50%);
-            opacity: 0.7;
-            pointer-events: none;
-            z-index: 1;
-        }
-
-        .video-gallery-container {
-            max-width: 1600px; /* Constrain content for readability */
-            margin: 0 auto;
-            padding: 0 50px; /* Inner padding */
-            position: relative;
-            z-index: 2;
-        }
-
-        .video-gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); /* 3 columns on large, adapts */
-            gap: 40px;
-            justify-content: center; /* Center items in grid */
-        }
-
-        .video-item {
-            background: var(--luxe-black);
-            border-radius: 20px;
-            overflow: hidden;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            opacity: 0;
-            transform: translateY(30px);
-            display: flex; /* Flex container for content */
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .video-item.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .video-item:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
-        }
-
-        .video-thumbnail-wrapper {
-            position: relative;
-            width: 100%;
-            padding-bottom: 100%; /* Perfect square aspect ratio */
-            overflow: hidden;
-            background-color: var(--charcoal);
-        }
-
-        .video-thumbnail {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Cover the square area */
-            display: block;
-        }
-
-        .play-button-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.4);
-            display: flex;
+            background: rgba(0,0,0,0.95);
+            z-index: 2000;
             justify-content: center;
             align-items: center;
-            opacity: 1; /* Always visible */
-            transition: background 0.3s ease;
+            padding: 2rem;
         }
 
-        .video-item:hover .play-button-overlay {
-            background: rgba(0, 0, 0, 0.6);
-        }
-
-        .play-icon {
-            color: var(--pearl-white);
-            font-size: 40px; /* Reduced play icon size */
-            filter: drop-shadow(0 0 8px rgba(0,0,0,0.8)); /* Slightly smaller shadow */
-            transition: transform 0.3s ease, color 0.3s ease;
-        }
-
-        .video-item:hover .play-icon {
-            transform: scale(1.1);
-            color: var(--primary-gold);
-        }
-
-        .video-details {
-            padding: 20px;
-            text-align: center;
-            flex-grow: 1;
+        .lightbox.active {
             display: flex;
-            flex-direction: column;
-            justify-content: center;
         }
 
-        .video-details .video-title {
-            font-family: 'Playfair Display', serif;
-            font-size: 22px;
-            color: var(--primary-gold);
-            margin-bottom: 10px;
-            line-height: 1.3;
-        }
-
-        .video-details .video-description {
-            font-size: 15px;
-            color: rgba(229, 228, 226, 0.8);
-            line-height: 1.5;
-        }
-        
-        /* Video Modal Specifics */
-        .video-modal-content {
-            background: var(--charcoal);
-            border-radius: 20px;
-            padding: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        .lightbox img {
             max-width: 90%;
-            max-height: 90vh;
+            max-height: 90%;
+            object-fit: contain;
         }
 
-        .video-player-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
-            height: 0;
-            overflow: hidden;
-            margin-bottom: 20px;
-            border-radius: 10px;
-        }
-
-        .video-player-container iframe {
+        .lightbox-close {
             position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            top: 2rem;
+            right: 2rem;
+            font-size: 3rem;
+            color: #fff;
+            cursor: pointer;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid rgba(255,255,255,0.3);
+            transition: all 0.3s;
         }
 
-        .video-info {
+        .lightbox-close:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        footer {
+            background: #0a0a0a;
+            padding: 3rem 5%;
             text-align: center;
-            width: 100%;
-            max-height: 20vh;
-            overflow-y: auto;
-        }
-        .video-modal-title {
-            font-size: 28px;
-            margin-bottom: 10px;
-        }
-        .video-modal-description {
-            font-size: 16px;
+            border-top: 1px solid rgba(255,255,255,0.1);
         }
 
-        /* FOOTER (EXISTING) */
-        .footer {
-            background: var(--gradient-luxury);
-            padding: 100px 0 50px; 
-            border-top: 1px solid rgba(212, 175, 55, 0.2);
-            position: relative;
-        }
-
-        .footer::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23d4af37" opacity="0.1"/></svg>');
-            opacity: 0.3;
-        }
-
-        .footer-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            padding: 0 50px; 
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 80px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .footer-section h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 24px;
-            color: var(--primary-gold);
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            color: rgba(229, 228, 226, 0.8);
-            text-decoration: none;
-            line-height: 1.8;
-            transition: color 0.3s ease;
-        }
-
-        .footer-section a:hover {
-            color: var(--primary-gold);
-        }
-
-        .footer-bottom {
-            text-align: center;
-            margin-top: 80px;
-            padding-top: 40px;
-            border-top: 1px solid rgba(212, 175, 55, 0.1);
-            color: rgba(229, 228, 226, 0.6);
-            font-size: 14px;
-            position: relative;
-            z-index: 2;
-        }
-
-        /* RESPONSIVE DESIGN */
-        @media (max-width: 1200px) {
-            .nav-container {
-                padding: 0 30px;
-            }
-            
-            .nav-menu {
-                gap: 30px;
-            }
-            
-            .gallery {
-                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-                gap: 30px;
-                padding: 0 30px; 
-            }
-            
-            .gallery-image {
-                height: 480px; 
-            }
-
-            .featured-container {
-                gap: 60px;
-            }
-            .featured-image img {
-                height: 700px; 
-            }
-
-            .edition-image {
-                height: 450px; 
-            }
-
-            .section-inner-content,
-            .testimonials-container, 
-            .limited-editions-container,
-            .artist-statement-content,
-            .about-content,
-            .footer-container,
-            .artist-profile-container,
-            .video-gallery-container { 
-                padding: 0 30px;
-            }
-
-            .testimonial-item {
-                min-width: 350px;
-                flex: 0 0 50%;
-            }
-
-            .edition-grid {
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 30px;
-            }
-
-            .projects-grid {
-                grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); 
-                gap: 40px;
-                padding: 0 30px;
-            }
-
-            .project-image-carousel {
-                height: 500px; 
-            }
-
-            /* Project Highlights - Medium screens */
-            .project-highlights-container {
-                padding: 0 0px; 
-            }
-            .project-highlight-item {
-                gap: 40px; 
-            }
-            .project-highlight-image-wrapper {
-                height: 600px; 
-            }
-            .project-highlight-content {
-                padding: 40px 60px; 
-            }
-            .project-highlight-content h3 {
-                font-size: clamp(2rem, 4vw, 3.5rem);
-            }
-            .project-highlight-content p {
-                font-size: 18px;
-            }
-
-            /* Artist Profile - Medium screens */
-            .artist-profile-container {
-                grid-template-columns: 1fr; 
-                gap: 60px;
-                text-align: center;
-            }
-            .artist-profile-image-wrapper {
-                height: 550px; 
-            }
-            .artist-profile-content {
-                padding: 0;
-            }
-            .artist-profile-content h2 {
-                text-align: center;
-            }
-            .artist-profile-content p {
-                text-align: center;
-            }
-            .artist-profile-signature {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-             @keyframes imageSlideIn { 
-                from {
-                    opacity: 0;
-                    transform: translateY(50px) scale(0.9);
-                }
-                to {
-                    opacity: 1;
-                    transform: translateY(0) scale(1);
-                }
-            }
-            /* Video Gallery - Medium screens */
-            .video-gallery-grid {
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                padding: 0 30px;
-                gap: 30px;
-            }
-            .video-details .video-title {
-                font-size: 20px; 
-            }
-            .video-details .video-description {
-                font-size: 14px; 
-            }
-        }
-
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-wrap: wrap; 
-                justify-content: space-between;
-                padding: 0 20px;
-            }
-            
-            .nav-toggle {
-                display: flex; 
-            }
-
-            .nav-menu {
-                display: none; 
-                flex-direction: column;
-                width: 100%;
-                background: rgba(10, 10, 10, 0.95);
-                backdrop-filter: blur(20px) saturate(180%);
-                position: absolute;
-                top: 100%; 
-                left: 0;
-                padding: 20px 0;
-                border-top: 1px solid rgba(212, 175, 55, 0.1);
-                box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
-                opacity: 0;
-                visibility: hidden;
-                transform: translateY(-20px);
-                transition: opacity 0.4s ease-out, transform 0.4s ease-out, visibility 0.4s;
-                gap: 10px; 
-                text-align: center;
-            }
-
-            .nav-menu.active {
-                display: flex; 
-                opacity: 1;
-                visibility: visible;
-                transform: translateY(0);
-            }
-
-            .nav-menu li {
-                width: 100%; 
-                padding: 10px 0;
-            }
-
-            .nav-link {
-                display: block; 
-                padding: 10px 20px; 
-            }
-
-            .hero {
-                padding: 0 20px;
-            }
-            
-            /* Apply consistent padding to all sections */
-            .portfolio, .featured, .artist-statement, .about, .testimonials, .limited-editions, .footer, .projects-showcase-section, .project-highlights-section, .artist-profile-section, .video-gallery-section {
-                padding-left: 0;
-                padding-right: 0; 
-            }
-
-            /* Apply padding to their inner containers */
-            .section-inner-content,
-            .testimonials-container, 
-            .limited-editions-container,
-            .artist-statement-content,
-            .about-content,
-            .footer-container,
-            .projects-grid,
-            .project-highlights-container,
-            .artist-profile-container,
-            .video-gallery-container { 
-                padding: 0 20px; 
-            }
-
-            .gallery {
-                grid-template-columns: 1fr; 
-                gap: 20px;
-                padding: 0 20px; 
-            }
-
-            .gallery-image {
-                height: 380px; 
-            }
-            
-            .featured-container {
-                grid-template-columns: 1fr;
-                gap: 40px;
-                text-align: center;
-            }
-            .featured-image img {
-                height: 450px; 
-            }
-            
-            .testimonial-carousel {
-                scroll-snap-type: none; 
-            }
-
-            .testimonial-item {
-                min-width: 90%; 
-                flex: 0 0 90%;
-                margin: 0 auto; 
-            }
-
-            .edition-grid {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-            .edition-image {
-                height: 380px; 
-            }
-            
-            .modal-content {
-                width: 98%;
-                margin: 1% auto;
-                height: 98vh;
-            }
-            
-            .modal-close {
-                top: 20px;
-                right: 20px;
-                width: 50px;
-                height: 50px;
-                font-size: 30px;
-            }
-            
-            .modal-nav {
-                width: 50px;
-                height: 50px;
-            }
-            
-            .modal-prev {
-                left: 20px;
-            }
-            
-            .modal-next {
-                right: 20px;
-            }
-
-            .artist-signature {
-                font-size: 2rem;
-            }
-
-            .projects-grid {
-                grid-template-columns: 1fr; 
-                gap: 30px;
-                padding: 0 20px;
-            }
-
-            .project-image-carousel {
-                height: 400px; 
-            }
-
-            /* Project Highlights - Mobile */
-            .project-highlight-item,
-            .project-highlight-item:nth-child(even) {
-                flex-direction: column; 
-                gap: 30px;
-                text-align: center;
-                align-items: center; 
-                border-radius: 25px; 
-                margin-bottom: 40px; 
-            }
-            .project-highlight-image-wrapper {
-                width: 100%;
-                min-width: unset;
-                height: 450px; 
-                border-radius: 25px 25px 0 0; 
-            }
-            .project-highlight-content {
-                width: 100%;
-                min-width: unset;
-                padding: 30px 20px;
-                text-align: center;
-                align-items: center; 
-            }
-            .project-highlight-content h3 {
-                font-size: 2rem;
-            }
-            .project-highlight-content p {
-                font-size: 16px;
-            }
-            .project-highlight-item:nth-child(even) .project-highlight-content {
-                align-items: center; 
-            }
-
-            /* Artist Profile - Mobile */
-            .artist-profile-image-wrapper {
-                height: 400px; /* Adjust height for mobile */
-            }
-
-            /* Video Gallery - Mobile */
-            .video-gallery-grid {
-                grid-template-columns: 1fr; /* Single column on mobile */
-                padding: 0 20px;
-                gap: 20px;
-            }
-            .video-item {
-                border-radius: 20px; /* Rounded corners for stacked items */
-            }
+        footer p {
+            opacity: 0.6;
+            font-size: 0.9rem;
         }
 
         @media (max-width: 480px) {
-            .hero-title {
-                font-size: 3rem;
-                letter-spacing: 4px;
-            }
-            
-            .hero-subtitle {
-                font-size: 16px;
-                letter-spacing: 2px;
-            }
-            
-            .luxury-button {
-                padding: 16px 32px;
-                font-size: 12px;
-            }
-            
-            .section-title {
-                font-size: 2.5rem;
+            nav { padding: 1.2rem 5%; }
+            .logo { 
+                font-size: 1.3rem; 
                 letter-spacing: 3px;
             }
-            
-            .filter-tabs {
-                gap: 8px;
+            .nav-links {
+                position: fixed;
+                top: 68px;
+                right: -100%;
+                width: 85%;
+                height: calc(100vh - 68px);
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(30px);
+                flex-direction: column;
+                padding: 3rem 2rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                border-left: 1px solid rgba(255,255,255,0.1);
+                gap: 1.5rem;
             }
-            
-            .filter-tab {
-                padding: 12px 24px;
-                font-size: 11px;
+            .nav-links a {
+                font-size: 1rem;
+                padding: 0.8rem 0;
             }
+            .nav-links.active { right: 0; }
+            .menu-toggle { display: flex; }
+            .hero { height: 65vh; margin-top: 68px; }
+            .slide-content { 
+                bottom: 8%; 
+                left: 5%; 
+                max-width: 90%; 
+                padding-right: 5%;
+            }
+            .slide-content h2 { 
+                font-size: 2rem; 
+                letter-spacing: 1px;
+                line-height: 1.3;
+            }
+            .slide-content p { 
+                font-size: 0.9rem; 
+                line-height: 1.5;
+            }
+            .slide-controls { 
+                bottom: 5%; 
+                right: 5%; 
+                gap: 0.6rem; 
+            }
+            .slide-btn { 
+                width: 42px; 
+                height: 42px; 
+                font-size: 1.3rem; 
+            }
+            .section { padding: 3rem 5%; }
+            .section-title { 
+                font-size: 2rem; 
+                margin-bottom: 2.5rem; 
+                letter-spacing: 2px;
+            }
+            .gallery { column-count: 1; column-gap: 0; }
+            .gallery-item { 
+                margin-bottom: 2rem;
+                border-radius: 4px;
+            }
+            .video-grid, .gif-showcase, .grid-gallery { 
+                grid-template-columns: 1fr; 
+                gap: 1.5rem; 
+            }
+            .split-section { 
+                grid-template-columns: 1fr; 
+                min-height: auto;
+            }
+            .split-item {
+                min-height: 50vh;
+            }
+            .full-width-feature { height: 55vh; margin: 2rem 0; }
+            .feature-text h2 { 
+                font-size: 2.2rem; 
+                letter-spacing: 1px;
+            }
+            .feature-text p { 
+                font-size: 1rem; 
+                line-height: 1.6;
+            }
+            .feature-overlay { padding: 2.5rem 5%; }
+            .split-overlay h3 { 
+                font-size: 1.6rem;
+                letter-spacing: 1px;
+            }
+            .parallax-section { 
+                height: 45vh; 
+                background-attachment: scroll; 
+                margin: 2rem 0;
+            }
+            .parallax-content { 
+                padding: 2.5rem 2rem;
+                border-radius: 4px;
+            }
+            .parallax-content h2 { 
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+            .parallax-content p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            .carousel-item { 
+                flex: 0 0 280px; 
+                height: 380px; 
+            }
+            .lightbox { padding: 1rem; }
+            .lightbox img { 
+                max-width: 95%; 
+                max-height: 85%; 
+            }
+            .lightbox-close { 
+                top: 1rem; 
+                right: 1rem; 
+                font-size: 2rem; 
+                width: 44px; 
+                height: 44px; 
+            }
+            .gif-caption {
+                padding: 1.2rem;
+            }
+            .gif-caption h3 {
+                font-size: 1.1rem;
+            }
+            .video-container {
+                border-radius: 4px;
+            }
+            footer {
+                padding: 2.5rem 5%;
+            }
+        }
 
-            .testimonial-item {
-                padding: 30px;
+        @media (min-width: 481px) and (max-width: 768px) {
+            nav { padding: 1.5rem 5%; }
+            .logo { 
+                font-size: 1.5rem;
+                letter-spacing: 3px;
             }
-
-            .testimonial-quote {
-                font-size: 22px;
+            .nav-links {
+                position: fixed;
+                top: 75px;
+                right: -100%;
+                width: 75%;
+                height: calc(100vh - 75px);
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(30px);
+                flex-direction: column;
+                padding: 3rem 2.5rem;
+                transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                border-left: 1px solid rgba(255,255,255,0.1);
+                gap: 1.5rem;
             }
-
-            .testimonial-quote::before {
-                font-size: 60px;
+            .nav-links a {
+                font-size: 0.95rem;
+                padding: 0.8rem 0;
             }
+            .nav-links.active { right: 0; }
+            .menu-toggle { display: flex; }
+            .hero { height: 75vh; }
+            .slide-content { 
+                left: 5%; 
+                max-width: 85%;
+            }
+            .slide-content h2 { 
+                font-size: 2.8rem;
+                letter-spacing: 1px;
+            }
+            .slide-content p { 
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .section-title { 
+                font-size: 2.5rem;
+                letter-spacing: 2px;
+            }
+            .section { padding: 4rem 5%; }
+            .gallery { 
+                column-count: 2; 
+                column-gap: 1.5rem;
+            }
+            .video-grid, .gif-showcase { 
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+            .grid-gallery { 
+                grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+                gap: 1.5rem;
+            }
+            .feature-text h2 { 
+                font-size: 2.8rem;
+                letter-spacing: 1px;
+            }
+            .feature-text p {
+                font-size: 1.05rem;
+                line-height: 1.7;
+            }
+            .parallax-content h2 { 
+                font-size: 2.3rem;
+                letter-spacing: 1px;
+            }
+            .parallax-content p {
+                font-size: 1rem;
+                line-height: 1.6;
+            }
+            .split-overlay h3 {
+                font-size: 1.8rem;
+                letter-spacing: 1px;
+            }
+            .full-width-feature {
+                height: 65vh;
+            }
+            .carousel-item {
+                flex: 0 0 320px;
+                height: 420px;
+            }
+        }
 
-            .edition-info h3 {
-                font-size: 22px;
+        @media (min-width: 769px) and (max-width: 1024px) {
+            nav { padding: 1.7rem 5%; }
+            .logo {
+                font-size: 1.7rem;
+                letter-spacing: 4px;
+            }
+            .section { padding: 4.5rem 5%; }
+            .section-title {
+                font-size: 2.8rem;
+                letter-spacing: 2px;
+            }
+            .gallery { 
+                column-count: 2; 
+                column-gap: 1.8rem;
+            }
+            .video-grid, .gif-showcase { 
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+            }
+            .grid-gallery { 
+                grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+                gap: 1.8rem;
+            }
+            .feature-text h2 { 
+                font-size: 3rem;
+                letter-spacing: 2px;
+            }
+            .feature-text p {
+                font-size: 1.1rem;
+                line-height: 1.75;
+            }
+            .slide-content h2 {
+                font-size: 3.5rem;
+            }
+            .parallax-content h2 {
+                font-size: 2.5rem;
+            }
+            .split-overlay h3 {
+                font-size: 2rem;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .section { padding: 6rem 6%; }
+            .grid-gallery { 
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 2rem;
+            }
+            .gallery {
+                column-gap: 2rem;
+            }
+            .video-grid, .gif-showcase {
+                gap: 2.5rem;
+            }
+        }
+
+        @media (min-width: 1400px) {
+            nav {
+                padding: 2rem 6%;
+            }
+            .section {
+                padding: 7rem 6%;
+            }
+            .section-title {
+                font-size: 3.5rem;
+                margin-bottom: 5rem;
+            }
+            .slide-content h2 {
+                font-size: 4.5rem;
+            }
+            .feature-text h2 {
+                font-size: 4rem;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Kajal's Canvas</a>
-            <!-- Hamburger menu toggle button -->
-            <button type="button" class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="#home" class="nav-link active">Home</a></li>
-                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                <li><a href="#featured" class="nav-link">Featured</a></li>
-                <li><a href="#projects-showcase" class="nav-link">Projects</a></li> 
-                <li><a href="#project-highlights" class="nav-link">Highlights</a></li>
-                <li><a href="#video-gallery" class="nav-link">Videos</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
+    <header>
+        <nav>
+            <div class="logo">Kajal's Art</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </nav>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
     <section class="hero" id="home">
-        <div class="hero-content">
-            <h1 class="hero-title">Art by Kajal</h1>
-            <a href="#portfolio" class="luxury-button">
-                <span>Explore Collection</span>
-                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m9 18 6-6-6-6"/>
-                </svg>
-            </a>
-        </div>
-        <div class="scroll-indicator">
-            <span>Scroll</span>
-            <div class="scroll-line"></div>
-        </div>
-    </section>
-
-        <!-- Projects Showcase Section -->
-    <section class="projects-showcase-section" id="projects-showcase">
-        <div class="section-inner-content">
-            <div class="section-header">
-                <h2 class="section-title">Project Showcase</h2>
-                <p class="section-subtitle">A curated display of our most iconic digital art projects, each a journey through innovation and vision.</p>
-            </div>
-        </div>
-        <div class="projects-grid" id="projects-grid">
-            <!-- Project items will be dynamically loaded by JavaScript -->
-        </div>
-    </section>
-
-    <!-- NEW: Video Gallery Section -->
-    <section class="video-gallery-section" id="video-gallery">
-        <div class="section-inner-content">
-            <div class="section-header">
-                <h2 class="section-title">Video Gallery</h2>
-                <p class="section-subtitle">A curated collection of short films and artistic statements, bringing our digital creations to life.</p>
-            </div>
-        </div>
-        <div class="video-gallery-container" id="video-gallery-container">
-            <div class="video-gallery-grid" id="video-gallery-grid">
-                <!-- Video items will be dynamically loaded by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Portfolio Section -->
-    <section class="portfolio" id="portfolio">
-        <div class="section-inner-content"> <!-- New wrapper for content -->
-            <div class="section-header">
-                <h2 class="section-title">Portfolio</h2>
-                <p class="section-subtitle">Discover our curated collection of exclusive digital masterpieces</p>
-            </div>
-
-            <!-- Filter Tabs -->
-            <div class="filter-tabs">
-                <button class="filter-tab active" data-filter="all"><span>All</span></button>
-                <button class="filter-tab" data-filter="abstract"><span>Abstract</span></button>
-                <button class="filter-tab" data-filter="portrait"><span>Portrait</span></button>
-                <button class="filter-tab" data-filter="landscape"><span>Landscape</span></button>
-                <button class="filter-tab" data-filter="conceptual"><span>Conceptual</span></button>
-            </div>
-        </div> <!-- End of section-inner-content for header and filters -->
-
-        <!-- Gallery Grid -->
-        <div class="gallery" id="gallery">
-            <!-- Gallery items will be populated by JavaScript -->
-        </div>
-    </section>
-    
-
-    <!-- Featured Section -->
-    <section class="featured" id="featured">
-        <div class="featured-container">
-            <div class="featured-content">
-                <h2>Featured Artist</h2>
-                <p>Discover the extraordinary work of our featured digital artist, whose innovative approach to contemporary art pushes the boundaries of digital expression and challenges traditional artistic conventions.</p>
-                <a href="#portfolio" class="luxury-button">
-                    <span>View Collection</span>
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="m9 18 6-6-6-6"/>
-                    </svg>
-                </a>
-            </div>
-            <div class="featured-image">
-                <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=cover&crop=center" alt="Featured Artwork">
-            </div>
-        </div>
-    </section>
-
-    <!-- Project Highlights Section -->
-    <section class="project-highlights-section" id="project-highlights">
-        <div class="section-inner-content">
-            <div class="section-header">
-                <h2 class="section-title">Project Highlights</h2>
-                <p class="section-subtitle">Deep dive into a selection of our pivotal projects, exploring their unique concepts and visual narratives.</p>
-            </div>
-        </div>
-        <div class="project-highlights-container" id="project-highlights-container">
-            <!-- Project highlight items will be dynamically loaded by JavaScript -->
-        </div>
-    </section>
-
-    <!-- Artist Profile Section -->
-    <section class="artist-profile-section" id="artist-profile">
-        <div class="artist-profile-container">
-            <div class="artist-profile-image-wrapper">
-                <img src="./media/its_me.png" alt="Artist Profile Image">
-            </div>
-            <div class="artist-profile-content">
-                <h2>A Little About Me</h2>
-                <p>Hey, I'm an artist who can't stick to just one medium (and honestly, why should I?). 
-                    From messy brushstrokes to moody textures, I make things that feel like they've got a little soul, a little chaos, and a lot of me in them. 
-                    I don't do graphic design, but give me a canvas, clay, or even a weird scrap of fabric — and I'll turn it into something that talks back.</p>
-                <span class="artist-profile-signature">Kajal</span>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Artist Statement Section -->
-    <section class="artist-statement" id="statement">
-        <div class="artist-statement-content">
-            <h2 class="section-title">Artist's Statement</h2>
-            <p>My work is a profound exploration of the intersection between human emotion and artificial intelligence. I believe that digital art, at its core, is not just about technology, but about the boundless possibilities of human creativity amplified by digital tools.</p>
-            <p>Each piece is a journey, a meditation on the unseen forces that shape our reality. I aim to evoke a sense of wonder and introspection, inviting viewers to question their perceptions and discover new dimensions within themselves.</p>
-            <p>Through intricate patterns, vivid colors, and dynamic compositions, I strive to create immersive experiences that transcend the conventional boundaries of art. This is not just art; it is a glimpse into a digital soul.</p>
-            <span class="artist-signature">Kajal</span>
-        </div>
-    </section>
-
-
-
-    <!-- Limited Editions Section -->
-    <section class="limited-editions" id="editions">
-        <div class="limited-editions-container">
-            <div class="section-header">
-                <h2 class="section-title">Limited Editions</h2>
-                <p class="section-subtitle">Secure your unique piece from our highly exclusive, limited-run digital art editions, each signed and authenticated.</p>
-            </div>
-            <div class="edition-grid" id="edition-grid">
-                <div class="edition-item">
-                    <img src="https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=cover&crop=center" alt="Limited Edition Artwork 1" class="edition-image">
-                    <div class="edition-info">
-                        <h3>Echoes of Tomorrow</h3>
-                        <p>A rare, conceptual piece representing the fleeting nature of time in a digital landscape. Limited to 5 prints.</p>
-                        <p class="edition-price">$12,000</p>
-                        <a href="#" class="luxury-button">
-                            <span>Inquire Now</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </a>
-                    </div>
+        <div class="slideshow">
+            <div class="slide active">
+                <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=1600" alt="Modern Art">
+                <div class="slide-content">
+                    <h2>Contemporary Expressions</h2>
+                    <p>Exploring the boundaries of modern creativity</p>
                 </div>
-                <div class="edition-item">
-                    <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=cover&crop=center" alt="Limited Edition Artwork 2" class="edition-image">
-                    <div class="edition-info">
-                        <h3>Quantum Genesis</h3>
-                        <p>An intricate abstract piece exploring the origins of digital consciousness. Limited to 3 prints.</p>
-                        <p class="edition-price">$15,000</p>
-                        <a href="#" class="luxury-button">
-                            <span>Inquire Now</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </a>
-                    </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1600" alt="Abstract Art">
+                <div class="slide-content">
+                    <h2>Abstract Visions</h2>
+                    <p>Where color and form transcend reality</p>
                 </div>
-                <div class="edition-item">
-                    <img src="https://images.unsplash.com/photo-1551913902-c92207136625?w=1920&h=1080&fit=cover&crop=center" alt="Limited Edition Artwork 3" class="edition-image">
-                    <div class="edition-info">
-                        <h3>Transcendence</h3>
-                        <p>A powerful portrait reflecting inner transformation in the face of digital evolution. Limited to 7 prints.</p>
-                        <p class="edition-price">$10,500</p>
-                        <a href="#" class="luxury-button">
-                            <span>Inquire Now</span>
-                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="m9 18 6-6-6-6"/>
-                            </svg>
-                        </a>
-                    </div>
+            </div>
+            <div class="slide">
+                <img src="https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=1600" alt="Gallery Space">
+                <div class="slide-content">
+                    <h2>Curated Collections</h2>
+                    <p>Discover extraordinary works from emerging artists</p>
+                </div>
+            </div>
+        </div>
+        <div class="slide-controls">
+            <button class="slide-btn" id="prevBtn">‹</button>
+            <button class="slide-btn" id="nextBtn">›</button>
+        </div>
+    </section>
+
+    <section class="section" id="videos">
+        <h2 class="section-title">Artist Spotlight</h2>
+        <div class="video-grid">
+            <div class="video-container">
+                <video controls poster="./media/art4a_thumbnail.png">
+                    <source src="./media/art4b.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="video-container">
+                <video controls poster="./media/art4a_thumbnail.png">
+                    <source src="./media/art4a.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="gallery">
+        <h2 class="section-title">Featured Collection</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="./media/art1d.jpg" alt="Abstract Painting">
+                <div class="gallery-overlay">
+                    <h3>Chromatic Dreams</h3>
+                    <p>Acrylic on Canvas, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/art1j.jpg" alt="Portrait">
+                <div class="gallery-overlay">
+                    <h3>Silent Contemplation</h3>
+                    <p>Oil on Canvas, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/art1214a.png" alt="Modern Art">
+                <div class="gallery-overlay">
+                    <h3>Urban Rhythms</h3>
+                    <p>Mixed Media, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/art1214b.png" alt="Sculpture">
+                <div class="gallery-overlay">
+                    <h3>Fluid Forms</h3>
+                    <p>Bronze Sculpture, 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/art1214c.png" alt="Contemporary">
+                <div class="gallery-overlay">
+                    <h3>Digital Horizons</h3>
+                    <p>Digital Art, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/art1214e.png" alt="Minimalist">
+                <div class="gallery-overlay">
+                    <h3>Essence of Space</h3>
+                    <p>Installation, 2023</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/" alt="Abstract">
+                <div class="gallery-overlay">
+                    <h3>Transcendence</h3>
+                    <p>Acrylic on Canvas, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/" alt="Modern">
+                <div class="gallery-overlay">
+                    <h3>Geometric Harmony</h3>
+                    <p>Mixed Media, 2024</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="./media/" alt="Portrait Art">
+                <div class="gallery-overlay">
+                    <h3>Inner Light</h3>
+                    <p>Photography, 2024</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="about-content">
-            <h2>About Kajal</h2>
-            <p>Kajal represents the pinnacle of digital artistry, showcasing exclusive collections from the world's most innovative digital artists. Our platform bridges the gap between traditional art appreciation and cutting-edge digital creativity.</p>
-            <p>Each piece in our collection is carefully curated to ensure the highest standards of artistic excellence and creative innovation. We believe that digital art represents the future of artistic expression.</p>
-            <p>Join us in celebrating the revolutionary world of digital art, where imagination meets technology to create extraordinary visual experiences.</p>
+    <div class="full-width-feature">
+        <img src="https://images.unsplash.com/photo-1558865869-c93f6f8482af?w=1600" alt="Featured Exhibition">
+        <div class="feature-overlay">
+            <div class="feature-text">
+                <h2>Immersive Experiences</h2>
+                <p>Step into a world where art transcends boundaries and creates unforgettable moments</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Contemporary Works</h2>
+        <div class="grid-gallery">
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=600" alt="Art 1">
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1577083552792-a0d461cb1dd6?w=600" alt="Art 2">
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=600" alt="Art 3">
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=600" alt="Art 4">
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=600" alt="Art 5">
+            </div>
+            <div class="grid-item">
+                <img src="https://images.unsplash.com/photo-1544967082-d9d25d867eeb?w=600" alt="Art 6">
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer" id="contact">
-        <div class="footer-container">
-            <div class="footer-section">
-                <h3>Kajal's Canvas</h3>
-                <p>Exclusively curating the finest digital art collections for discerning collectors and art enthusiasts worldwide.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <p><a href="#home">Home</a></p>
-                <p><a href="#portfolio">Portfolio</a></p>
-                <p><a href="#projects-showcase">Projects</a></p> 
-                <p><a href="#video-gallery">Videos</a></p> 
-                <p><a href="#about">About</a></p>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>hello@Kajal.gallery</p>
-                <p>+1 (555) 123-4567</p>
-                <p>New York, NY</p>
-            </div>
-            <div class="footer-section">
-                <h3>Connect</h3>
-                <p><a href="#">Instagram</a></p>
-                <p><a href="#">Twitter</a></p>
-                <p><a href="#">ArtStation</a></p>
+    <div class="split-section">
+        <div class="split-item">
+            <video autoplay muted loop>
+                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+            </video>
+            <div class="split-overlay">
+                <h3>Motion & Light</h3>
             </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 Kajal Gallery. All rights reserved.</p>
+        <div class="split-item">
+            <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800" alt="Sculpture">
+            <div class="split-overlay">
+                <h3>Form & Texture</h3>
+            </div>
         </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Animated Art</h2>
+        <div class="gif-showcase">
+            <div class="gif-item">
+                <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600" alt="Animation 1">
+                <div class="gif-caption">
+                    <h3>Digital Motion</h3>
+                    <p>Generative art piece exploring color and movement</p>
+                </div>
+            </div>
+            <div class="gif-item">
+                <img src="https://images.unsplash.com/photo-1547826039-bfc35e0f1ea8?w=600" alt="Animation 2">
+                <div class="gif-caption">
+                    <h3>Fluid Dynamics</h3>
+                    <p>Abstract animation inspired by natural phenomena</p>
+                </div>
+            </div>
+            <div class="gif-item">
+                <img src="https://images.unsplash.com/photo-1536924940846-227afb31e2a5?w=600" alt="Animation 3">
+                <div class="gif-caption">
+                    <h3>Rhythmic Patterns</h3>
+                    <p>Geometric exploration of repetition and variation</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="parallax-section" style="background-image: url('https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=1600');">
+        <div class="parallax-content">
+            <h2>Experience Art Differently</h2>
+            <p>Join us for exclusive exhibitions and artist talks</p>
+        </div>
+    </div>
+
+    <section class="section">
+        <h2 class="section-title">Infinite Gallery</h2>
+    </section>
+    <div class="carousel-section">
+        <div class="carousel-track">
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=400" alt="Carousel 1"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=400" alt="Carousel 2"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1577083552792-a0d461cb1dd6?w=400" alt="Carousel 3"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400" alt="Carousel 4"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1518998053901-5348d3961a04?w=400" alt="Carousel 5"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1544967082-d9d25d867eeb?w=400" alt="Carousel 6"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1549887534-1541e9326642?w=400" alt="Carousel 1"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1561214115-f2f134cc4912?w=400" alt="Carousel 2"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1577083552792-a0d461cb1dd6?w=400" alt="Carousel 3"></div>
+            <div class="carousel-item"><img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400" alt="Carousel 4"></div>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img id="lightboxImg" src="" alt="Enlarged view">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Artistry Gallery. All Rights Reserved.</p>
     </footer>
 
-    <!-- Video Modal -->
-    <div class="modal" id="videoModal">
-        <div class="modal-content video-modal-content">
-            <span class="modal-close video-modal-close">&times;</span>
-            <div class="video-player-container">
-                <iframe id="videoPlayer" width="100%" height="100%" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
-            <div class="video-info">
-                <h3 class="video-modal-title"></h3>
-                <p class="video-modal-description"></p>
-            </div>
-        </div>
-    </div>
-
-    <!-- General Image Modal (Existing) -->
-    <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div class="modal-nav modal-prev">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m15 18-6-6 6-6"/>
-                </svg>
-            </div>
-            <div class="modal-nav modal-next">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="m9 18 6-6-6-6"/>
-                </svg>
-            </div>
-            <div class="modal-image-container">
-                <img id="modal-image" src="" alt="">
-                <div class="modal-info">
-                    <h3 class="modal-title"></h3>
-                    <p class="modal-category"></p>
-                    <p class="modal-description"></p>
-                    <p class="modal-price"></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <script>
-        // Gallery data for Portfolio section
-        const artworks = [
-            {
-                id: 1,
-                title: "Digital Dreams",
-                category: "abstract",
-                price: "$2,500",
-                image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=1920&h=1080&fit=cover&crop=center",
-                description: "An abstract exploration of digital consciousness and virtual reality landscapes, capturing the essence of a dream-like state in a hyper-realistic digital medium."
-            },
-            {
-                id: 2,
-                title: "Neon Portrait",
-                category: "portrait",
-                price: "$3,200",
-                image: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=1920&h=1080&fit=cover&crop=center",
-                description: "A stunning digital portrait featuring vibrant neon aesthetics and contemporary styling, reflecting the luminous and transient nature of modern identity."
-            },
-            {
-                id: 3,
-                title: "Virtual Horizon",
-                category: "landscape",
-                price: "$1,800",
-                image: "https://images.unsplash.com/photo-1518709268805-4e9042af2176?w=1920&h=1080&fit=cover&crop=center",
-                description: "A breathtaking digital landscape that blurs the line between reality and imagination, inviting viewers into an expansive, otherworldly vista."
-            },
-            {
-                id: 4,
-                title: "Geometric Fusion",
-                category: "abstract",
-                price: "$2,100",
-                image: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1920&h=1080&fit=cover&crop=center",
-                description: "Bold geometric patterns merged with organic flowing forms in perfect harmony, symbolizing the complex dance between order and chaos in the digital realm."
-            },
-            {
-                id: 5,
-                title: "Digital Persona",
-                category: "portrait",
-                price: "$4,500",
-                image: "https://images.unsplash.com/photo-1551913902-c92207136625?w=1920&h=1080&fit=cover&crop=center",
-                description: "An innovative portrait exploring identity in the digital age, showcasing the multifaceted layers of self in a hyper-connected world."
-            },
-            {
-                id: 6,
-                title: "Concept Zero",
-                category: "conceptual",
-                price: "$5,000",
-                image: "https://images.unsplash.com/photo-1572177812156-58036aae439c?w=1920&h=1080&fit=cover&crop=center",
-                description: "A thought-provoking conceptual piece questioning the nature of digital existence and the infinite possibilities within artificial creation."
-            },
-            {
-                id: 7,
-                title: "Ethereal Bloom",
-                category: "abstract",
-                price: "$2,800",
-                image: "https://images.unsplash.com/photo-1522778734994-e3eb63a94154?w=1920&h=1080&fit=cover&crop=center",
-                description: "A captivating abstract work resembling a celestial flower, blooming with iridescent colors and intricate light play."
-            },
-            {
-                id: 8,
-                title: "Cybernetic Gaze",
-                category: "portrait",
-                price: "$3,800",
-                image: "https://images.unsplash.com/photo-1562817296-6e42b6a9e8b1?w=1920&h=1080&fit=cover&crop=center",
-                description: "A piercing digital portrait with an intense gaze, hinting at a future where human and machine coalesce."
-            },
-            {
-                id: 9,
-                title: "Urban Synthesis",
-                category: "landscape",
-                price: "$2,300",
-                image: "https://images.unsplash.com/photo-1542841646-4c480572e9d2?w=1920&h=1080&fit=cover&crop=center",
-                description: "A dynamic digital cityscape, blending futuristic architecture with elements of natural urban decay."
-            }
-        ];
+        // Header scroll effect
+        const header = document.querySelector('header');
+        let lastScroll = 0;
 
-        // Projects Data for Showcase Section (grid layout)
-        const projectsData = [
-            {
-                id: 'project-genesis',
-                title: "The Genesis Series",
-                shortDescription: "Exploring the birth of digital consciousness through evolving forms and intricate algorithms.",
-                images: [
-                    { src: "./media/art1a.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art1b.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art1c.jpg", alt: "Genesis series - Core structure" },
-                    { src: "./media/art1d.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art1e.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art1f.jpg", alt: "Genesis series - Core structure" },
-                    { src: "./media/art1g.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art1h.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art1i.jpg", alt: "Genesis series - Core structure" },
-                    { src: "./media/art1j.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art1k.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art1l.jpg", alt: "Genesis series - Core structure" },
-                    { src: "./media/art1m.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art1n.jpg", alt: "Genesis series - Core structure" }
-                ]
-            },
-            {
-                id: 'project-urban',
-                title: "Urban Rhapsody",
-                shortDescription: "Dynamic cityscapes infused with organic growth, showcasing metropolitan evolution.",
-                images: [
-                    { src: "./media/art2a.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art2b.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art2c.jpg", alt: "Genesis series - Core structure" },
-                    { src: "./media/art2d.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art2e.jpg", alt: "Genesis series - Digital flow" },
-                    { src: "./media/art2f.jpg", alt: "Genesis series - Core structure" }
-                ]
-            },
-            {
-                id: 'project-portraits',
-                title: "Echoes of Identity",
-                shortDescription: "Introspective digital portraits exploring the complexities of human and digital selves.",
-                images: [
-                    { src: "./media/art3a.jpg", alt: "Genesis series - Abstract form" },
-                    { src: "./media/art3b.jpg", alt: "Genesis series - Digital flow" },
-                ]
-            },
-            {
-                id: 'project-natural',
-                title: "Digital Horizons",
-                shortDescription: "Seamless blending of natural landscapes with digital aesthetics, creating new vistas.",
-                images: [
-                    { src: "./media/art5.jpg", alt: "Genesis series - Abstract form" }
-                ]
-            }
-        ];
-
-        // Project Highlights Data (alternating layout)
-        const projectHighlightsData = [
-            {
-                id: 'highlight-creation',
-                title: "The Birth of a Digital Masterpiece",
-                description: "Witness the intricate process from concept to completion. Each pixel is meticulously crafted to bring visionary ideas to life, blending cutting-edge technology with artistic intuition.",
-                images: [
-                    { src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&h=1080&fit=cover&crop=center", alt: "Digital creation process" },
-                    { src: "https://images.unsplash.com/photo-1547841243-e62a04944d18?w=1920&h=1080&fit=cover&crop=center", alt: "Artist at work" },
-                    { src: "https://images.unsplash.com/photo-1516259020901-ec7b7029671d?w=1920&h=1080&fit=cover&crop=center", alt: "Abstract digital painting software" }
-                ]
-            },
-            {
-                id: 'highlight-inspiration',
-                title: "Inspired by the Unseen",
-                description: "Our art draws from the hidden geometries of nature and the boundless cosmos, translating complex ideas into visually stunning digital forms that challenge perception.",
-                images: [
-                    { src: "https://images.unsplash.com/photo-1501854140801-50d0069879a0?w=1920&h=1080&fit=cover&crop=center", alt: "Mountain landscape with starry sky" },
-                    { src: "https://images.unsplash.com/photo-1544077977-bc63e990c01a?w=1920&h=1080&fit=cover&crop=center", alt: "Macro shot of plant structures" },
-                    { src: "https://images.unsplash.com/photo-1522075782449-744047a06d0b?w=1920&h=1080&fit=cover&crop=center", alt: "Aurora borealis digital art" }
-                ]
-            },
-            {
-                id: 'highlight-innovation',
-                title: "Pioneering Digital Frontiers",
-                description: "At the forefront of digital innovation, we continuously push technological boundaries to achieve artistic expressions never before imagined, redefining what's possible.",
-                images: [
-                    { src: "https://images.unsplash.com/photo-1504384308064-9276d3f23b7b?w=1920&h=1080&fit=cover&crop=center", alt: "Abstract circuit board art" },
-                    { src: "https://images.unsplash.com/photo-1518621742468-b7787d55982c?w=1920&h=1080&fit=cover&crop=center", alt: "Sci-fi abstract tunnel" },
-                    { src: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=1920&h=1080&fit=cover&crop=center", alt: "Digital data flow visualization" }
-                ]
-            }
-        ];
-
-        let currentImageIndex = 0;
-        let filteKajalworks = [...artworks];
-        const projectCarouselStates = {}; 
-        const projectHighlightCarouselStates = {}; 
-        const videoGalleryModalStates = {}; // State for video gallery modal
-
-        // Initialize the website
-        function initWebsite() {
-            renderGallery(artworks);
-            setupEventListeners();
-            setupScrollAnimations();
-            renderProjectsShowcase(); 
-            renderProjectHighlights(); 
-            renderVideoGallery(); 
-        }
-
-        // Render gallery items (for Portfolio section)
-        function renderGallery(items) {
-            const gallery = document.getElementById('gallery');
-            gallery.innerHTML = '';
-
-            items.forEach((artwork, index) => {
-                const item = document.createElement('div');
-                item.className = 'gallery-item';
-                item.dataset.category = artwork.category;
-                item.innerHTML = `
-                    <img src="${artwork.image}" alt="${artwork.title}" class="gallery-image">
-                    <div class="gallery-overlay">
-                        <h3 class="gallery-title">${artwork.title}</h3>
-                        <p class="gallery-category">${artwork.category}</p>
-                        <p class="gallery-price">${artwork.price}</p>
-                    </div>
-                `;
-                
-                item.addEventListener('click', () => openModal(filteKajalworks.indexOf(artwork)));
-                gallery.appendChild(item);
-            });
-        }
-
-        // Setup event listeners for the whole site
-        function setupEventListeners() {
-            // Filter tabs
-            const filterTabs = document.querySelectorAll('.filter-tab');
-            filterTabs.forEach(tab => {
-                tab.addEventListener('click', () => {
-                    filterTabs.forEach(t => t.classList.remove('active'));
-                    tab.classList.add('active');
-                    const filter = tab.dataset.filter;
-                    filterGallery(filter);
-                });
-            });
-
-            // Navbar scroll effect
-            window.addEventListener('scroll', () => {
-                const navbar = document.getElementById('navbar');
-                if (window.scrollY > 100) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-
-                // Update active nav link based on scroll position
-                const sections = document.querySelectorAll('section');
-                const navLinks = document.querySelectorAll('.nav-menu a.nav-link');
-                let currentActive = 'home';
-                sections.forEach(section => {
-                    const sectionTop = section.offsetTop - navbar.offsetHeight - 50; 
-                    const sectionBottom = sectionTop + section.offsetHeight;
-                    if (window.scrollY >= sectionTop && window.scrollY < sectionBottom) {
-                        currentActive = section.id;
-                    }
-                });
-
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                    if (link.getAttribute('href').substring(1) === currentActive) {
-                        link.classList.add('active');
-                    }
-                });
-            });
-
-            // Smooth scrolling for navigation links
-            const navLinks = document.querySelectorAll('.nav-menu a.nav-link');
-            navLinks.forEach(link => {
-                link.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    const targetId = link.getAttribute('href');
-                    const targetSection = document.querySelector(targetId);
-                    if (targetSection) {
-                        const offsetTop = targetSection.offsetTop - document.getElementById('navbar').offsetHeight; 
-                        window.scrollTo({
-                            top: offsetTop,
-                            behavior: 'smooth'
-                        });
-                    }
-
-                    navLinks.forEach(l => l.classList.remove('active'));
-                    link.classList.add('active');
-
-                    const navMenu = document.getElementById('navMenu');
-                    const navToggle = document.getElementById('navToggle');
-                    if (navMenu.classList.contains('active')) {
-                        navMenu.classList.remove('active');
-                        navToggle.classList.remove('active');
-                    }
-                });
-            });
-
-            // Mobile menu toggle
-            const navToggle = document.getElementById('navToggle');
-            const navMenu = document.getElementById('navMenu');
-
-            navToggle.addEventListener('click', () => {
-                navMenu.classList.toggle('active');
-                navToggle.classList.toggle('active');
-            });
-
-            // General Image Modal event listeners
-            const modal = document.getElementById('modal');
-            const modalClose = document.querySelector('.modal-close');
-            const modalPrev = document.querySelector('.modal-prev');
-            const modalNext = document.querySelector('.modal-next');
-
-            modalClose.addEventListener('click', closeModal);
-            modalPrev.addEventListener('click', () => navigateModal(-1));
-            modalNext.addEventListener('click', () => navigateModal(1));
-
-            modal.addEventListener('click', (e) => {
-                if (e.target === modal) {
-                    closeModal();
-                }
-            });
-
-            document.addEventListener('keydown', (e) => {
-                if (modal.style.display === 'block') {
-                    if (e.key === 'Escape') closeModal();
-                    if (e.key === 'ArrowLeft') navigateModal(-1);
-                    if (e.key === 'ArrowRight') navigateModal(1);
-                }
-            });
-
-            // Video Modal Event Listeners
-            const videoModal = document.getElementById('videoModal');
-            const videoModalClose = document.querySelector('.video-modal-close');
-            const videoPlayer = document.getElementById('videoPlayer');
-
-            videoModalClose.addEventListener('click', closeVideoModal);
-            videoModal.addEventListener('click', (e) => {
-                if (e.target === videoModal) {
-                    closeVideoModal();
-                }
-            });
-            document.addEventListener('keydown', (e) => {
-                if (videoModal.style.display === 'block' && e.key === 'Escape') {
-                    closeVideoModal();
-                }
-            });
-        }
-
-        // Filter gallery items
-        function filterGallery(filter) {
-            if (filter === 'all') {
-                filteKajalworks = [...artworks];
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 50) {
+                header.classList.add('scrolled');
             } else {
-                filteKajalworks = artworks.filter(artwork => artwork.category === filter);
-            }
-            renderGallery(filteKajalworks);
-            setupScrollAnimations(); 
-        }
-
-        // General Image Modal functionality
-        function openModal(index) {
-            currentImageIndex = index;
-            const artwork = filteKajalworks[index];
-            
-            const modal = document.getElementById('modal');
-            const modalImage = document.getElementById('modal-image');
-            const modalTitle = document.querySelector('.modal-title');
-            const modalCategory = document.querySelector('.modal-category');
-            const modalDescription = document.querySelector('.modal-description');
-            const modalPrice = document.querySelector('.modal-price');
-
-            modalImage.src = artwork.image;
-            modalImage.alt = artwork.title;
-            modalTitle.textContent = artwork.title;
-            modalCategory.textContent = artwork.category.toUpperCase();
-            modalDescription.textContent = artwork.description;
-            modalPrice.textContent = artwork.price;
-
-            modal.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('modal');
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
-        }
-
-        function navigateModal(direction) {
-            currentImageIndex += direction;
-            
-            if (currentImageIndex >= filteKajalworks.length) {
-                currentImageIndex = 0;
-            } else if (currentImageIndex < 0) {
-                currentImageIndex = filteKajalworks.length - 1;
+                header.classList.remove('scrolled');
             }
             
-            const artwork = filteKajalworks[currentImageIndex];
-            const modalImage = document.getElementById('modal-image');
-            const modalTitle = document.querySelector('.modal-title');
-            const modalCategory = document.querySelector('.modal-category');
-            const modalDescription = document.querySelector('.modal-description');
-            const modalPrice = document.querySelector('.modal-price');
+            lastScroll = currentScroll;
+        });
 
-            modalImage.src = artwork.image;
-            modalImage.alt = artwork.title;
-            modalTitle.textContent = artwork.title;
-            modalCategory.textContent = artwork.category.toUpperCase();
-            modalDescription.textContent = artwork.description;
-            modalPrice.textContent = artwork.price;
+        // Mobile menu
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Slideshow
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (n + totalSlides) % totalSlides;
+            slides[currentSlide].classList.add('active');
         }
 
-        // Scroll animations (Intersection Observer)
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        // Lightbox
+        const galleryItems = document.querySelectorAll('.gallery-item img, .grid-item img, .grid-item video');
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightboxImg');
+        const lightboxClose = document.getElementById('lightboxClose');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                if (item.tagName === 'IMG') {
+                    lightbox.classList.add('active');
+                    lightboxImg.src = item.src;
+                }
+            });
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for fade-in animations
         const observerOptions = {
             threshold: 0.1,
-            rootMargin: '0px 0px -10% 0px' 
+            rootMargin: '0px 0px -50px 0px'
         };
 
-        const generalObserver = new IntersectionObserver((entries) => {
+        const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
-                if (entry.target.classList.contains('project-item')) {
-                    const projectId = entry.target.dataset.projectId;
-                    const currentProjectState = projectCarouselStates[projectId];
-
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scrolled-in'); 
-                        showProjectImage(projectId, currentProjectState.currentImageIndex); 
-                        if (!currentProjectState.intervalId) {
-                            currentProjectState.intervalId = setInterval(() => {
-                                cycleProjectImages(projectId);
-                            }, 2000); 
-                        }
-                    } else {
-                        entry.target.classList.remove('scrolled-in'); 
-                        if (currentProjectState.intervalId) {
-                            clearInterval(currentProjectState.intervalId);
-                            currentProjectState.intervalId = null;
-                        }
-                    }
-                } else if (entry.target.classList.contains('project-highlight-item')) { // Handle highlight items
-                    const highlightId = entry.target.dataset.highlightId;
-                    const currentHighlightState = projectHighlightCarouselStates[highlightId];
-
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scrolled-in'); 
-                        showProjectHighlightImage(highlightId, currentHighlightState.currentImageIndex); 
-                        if (!currentHighlightState.intervalId) {
-                            currentHighlightState.intervalId = setInterval(() => {
-                                cycleProjectHighlightImages(highlightId);
-                            }, 2000); 
-                        }
-                    } else {
-                        entry.target.classList.remove('scrolled-in'); 
-                        if (currentHighlightState.intervalId) {
-                            clearInterval(currentHighlightState.intervalId);
-                            currentHighlightState.intervalId = null;
-                        }
-                    }
-                } else if (entry.target.classList.contains('artist-profile-image-wrapper') || entry.target.classList.contains('artist-profile-content')) {
-                     // For artist profile image and content animations
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('scrolled-in');
-                    } else {
-                        entry.target.classList.remove('scrolled-in'); // Reset for re-animation if scrolled away
-                    }
-                }
-                else if (entry.target.classList.contains('video-item')) {
-                    // Video items might have their own animations if needed
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    } else {
-                        // entry.target.classList.remove('visible'); // If you want them to re-animate
-                    }
-                }
-                else { // For other animated elements
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    } else {
-                        // entry.target.classList.remove('visible'); 
-                    }
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
         }, observerOptions);
 
-        function setupScrollAnimations() {
-            const animatedElements = document.querySelectorAll(
-                '.gallery-item, .section-header, .featured-content, .about-content, .artist-statement-content, .testimonial-item, .edition-item, .project-item, .project-highlight-item, .artist-profile-image-wrapper, .artist-profile-content, .video-item'
-            ); 
-            animatedElements.forEach(el => {
-                if (el.classList.contains('project-item') || el.classList.contains('project-highlight-item') || el.classList.contains('artist-profile-image-wrapper') || el.classList.contains('artist-profile-content')) {
-                    el.classList.remove('scrolled-in'); 
-                    generalObserver.unobserve(el); 
-                    generalObserver.observe(el);
-                } else {
-                    el.classList.remove('visible'); 
-                    generalObserver.unobserve(el); 
-                    generalObserver.observe(el);
-                }
-            });
-        }
-
-        // Projects Showcase Logic (grid layout with individual carousels)
-        function renderProjectsShowcase() {
-            const projectsGrid = document.getElementById('projects-grid');
-            projectsGrid.innerHTML = ''; 
-
-            projectsData.forEach(project => {
-                const projectItem = document.createElement('div');
-                projectItem.className = 'project-item';
-                projectItem.dataset.projectId = project.id; 
-
-                if (!projectCarouselStates[project.id]) {
-                    projectCarouselStates[project.id] = {
-                        currentImageIndex: 0,
-                        intervalId: null
-                    };
-                }
-
-                projectItem.innerHTML = `
-                    <div class="project-image-carousel">
-                        ${project.images.map((img, idx) => `
-                            <img src="${img.src}" alt="${img.alt}"> 
-                        `).join('')}
-                    </div>
-                    <div class="project-content">
-                        <h3>${project.title}</h3>
-                        <p>${project.shortDescription}</p>
-                    </div>
-                `;
-                projectsGrid.appendChild(projectItem);
-
-                generalObserver.observe(projectItem);
-                
-                const initialImage = projectItem.querySelector('.project-image-carousel img:first-child');
-                if (initialImage) {
-                    initialImage.classList.add('active');
-                }
-            });
-        }
-
-        function cycleProjectImages(projectId) {
-            const projectElement = document.querySelector(`.project-item[data-project-id="${projectId}"]`);
-            if (!projectElement) return;
-
-            const images = projectElement.querySelectorAll('.project-image-carousel img');
-            const currentProjectState = projectCarouselStates[projectId];
-
-            if (images.length === 0) return;
-
-            images[currentProjectState.currentImageIndex].classList.remove('active');
-            currentProjectState.currentImageIndex = (currentProjectState.currentImageIndex + 1) % images.length;
-            images[currentProjectState.currentImageIndex].classList.add('active');
-        }
-
-        function showProjectImage(projectId, index) {
-            const projectElement = document.querySelector(`.project-item[data-project-id="${projectId}"]`);
-            if (!projectElement) return;
-            const images = projectElement.querySelectorAll('.project-image-carousel img');
-            const currentProjectState = projectCarouselStates[projectId];
-
-            if (images.length === 0 || index < 0 || index >= images.length) return;
-
-            images.forEach(img => img.classList.remove('active'));
-            images[index].classList.add('active');
-            currentProjectState.currentImageIndex = index;
-        }
-
-
-        // Projects Highlights Logic (alternating layout with individual carousels)
-        function renderProjectHighlights() {
-            const highlightsContainer = document.getElementById('project-highlights-container');
-            highlightsContainer.innerHTML = ''; 
-
-            projectHighlightsData.forEach(highlight => {
-                const highlightItem = document.createElement('div');
-                highlightItem.className = 'project-highlight-item';
-                highlightItem.dataset.highlightId = highlight.id; 
-
-                if (!projectHighlightCarouselStates[highlight.id]) {
-                    projectHighlightCarouselStates[highlight.id] = {
-                        currentImageIndex: 0,
-                        intervalId: null
-                    };
-                }
-
-                highlightItem.innerHTML = `
-                    <div class="project-highlight-image-wrapper">
-                        ${highlight.images.map((img, idx) => `
-                            <img src="${img.src}" alt="${img.alt}">
-                        `).join('')}
-                    </div>
-                    <div class="project-highlight-content">
-                        <h3>${highlight.title}</h3>
-                        <p>${highlight.description}</p>
-                    </div>
-                `;
-                highlightsContainer.appendChild(highlightItem);
-
-                generalObserver.observe(highlightItem); 
-
-                const initialImage = highlightItem.querySelector('.project-highlight-image-wrapper img:first-child');
-                if (initialImage) {
-                    initialImage.classList.add('active');
-                }
-            });
-        }
-
-        function cycleProjectHighlightImages(highlightId) {
-            const highlightElement = document.querySelector(`.project-highlight-item[data-highlight-id="${highlightId}"]`);
-            if (!highlightElement) return;
-
-            const images = highlightElement.querySelectorAll('.project-highlight-image-wrapper img');
-            const currentHighlightState = projectHighlightCarouselStates[highlightId];
-
-            if (images.length === 0) return;
-
-            images[currentHighlightState.currentImageIndex].classList.remove('active');
-            currentHighlightState.currentImageIndex = (currentHighlightState.currentImageIndex + 1) % images.length;
-            images[currentHighlightState.currentImageIndex].classList.add('active');
-        }
-
-        function showProjectHighlightImage(highlightId, index) {
-            const highlightElement = document.querySelector(`.project-highlight-item[data-highlight-id="${highlightId}"]`);
-            if (!highlightElement) return;
-            const images = highlightElement.querySelectorAll('.project-highlight-image-wrapper img');
-            const currentHighlightState = projectHighlightCarouselStates[highlightId];
-
-            if (images.length === 0 || index < 0 || index >= images.length) return;
-
-            images.forEach(img => img.classList.remove('active'));
-            images[index].classList.add('active');
-            currentHighlightState.currentImageIndex = index;
-        }
-
-        /* Video Gallery Logic and Data */
-        const videoGalleryData = [
-            {
-                id: 'art-4',
-                thumbnail: './media/art4a.png',
-                videoUrl: './media/art4a.mp4', // Rick Astley - Never Gonna Give You Up (Placeholder)
-                title: 'Art 4a',
-                description: 'Sample Digital Art Video 4'
-            },
-            {
-                id: 'art-5',
-                thumbnail: './media/art4a.png',
-                videoUrl: './media/art4b.mp4', // Rick Astley - Never Gonna Give You Up (Placeholder)
-                title: 'Art 4b',
-                description: 'Sample Digital Art Video 4'
-            },
-        ];
-
-        function renderVideoGallery() {
-            const videoGrid = document.getElementById('video-gallery-grid');
-            videoGrid.innerHTML = '';
-
-            videoGalleryData.forEach(video => {
-                const videoItem = document.createElement('div');
-                videoItem.className = 'video-item';
-                videoItem.dataset.videoId = video.id;
-                videoItem.innerHTML = `
-                    <div class="video-thumbnail-wrapper">
-                        <img src="${video.thumbnail}" alt="${video.title} thumbnail" class="video-thumbnail">
-                        <div class="play-button-overlay">
-                            <svg viewBox="0 0 24 24" fill="currentColor" class="play-icon" style="width: 60px; height: 60px;">
-                                <path d="M8 5v14l11-7z"/>
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="video-details">
-                        <h4 class="video-title">${video.title}</h4>
-                        <p class="video-description">${video.description}</p>
-                    </div>
-                `;
-                videoItem.addEventListener('click', () => openVideoModal(video.videoUrl, video.title, video.description));
-                videoGrid.appendChild(videoItem);
-
-                generalObserver.observe(videoItem); // Observe video items for scroll animation
-            });
-        }
-
-        function openVideoModal(videoUrl, title, description) {
-            const videoModal = document.getElementById('videoModal');
-            const videoPlayer = document.getElementById('videoPlayer');
-            const videoModalTitle = document.querySelector('.video-modal-title');
-            const videoModalDescription = document.querySelector('.video-modal-description');
-
-            videoPlayer.src = videoUrl;
-            videoModalTitle.textContent = title;
-            videoModalDescription.textContent = description;
-
-            videoModal.style.display = 'block';
-            document.body.style.overflow = 'hidden'; // Prevent scrolling background
-        }
-
-        function closeVideoModal() {
-            const videoModal = document.getElementById('videoModal');
-            const videoPlayer = document.getElementById('videoPlayer');
-            
-            videoPlayer.src = ''; // Stop video playback
-            videoModal.style.display = 'none';
-            document.body.style.overflow = 'auto'; // Re-enable scrolling
-        }
-
-        // Initialize everything when DOM is loaded
-        document.addEventListener('DOMContentLoaded', initWebsite);
+        document.querySelectorAll('.section, .full-width-feature, .split-section, .parallax-section').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(30px)';
+            el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
