@@ -235,6 +235,174 @@
             background: linear-gradient(90deg, transparent, #ffffff, transparent);
         }
 
+        /* Artist Section */
+        .artist-section {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(20,20,20,0.5) 0%, rgba(10,10,10,0.8) 100%);
+            border-top: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .artist-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 4rem;
+            align-items: center;
+        }
+
+        .artist-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            border: 1px solid rgba(255,255,255,0.15);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .artist-image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .artist-image-wrapper:hover img {
+            transform: scale(1.05);
+        }
+
+        .artist-content h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            margin-bottom: 1rem;
+            letter-spacing: 2px;
+            background: linear-gradient(135deg, #ffffff 0%, #cccccc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .artist-content h3 {
+            font-size: 1.1rem;
+            font-weight: 400;
+            color: #b8b8b8;
+            margin-bottom: 2rem;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        .artist-content p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            opacity: 0.85;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+        }
+
+        .artist-quote {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-style: italic;
+            opacity: 0.9;
+            padding-left: 2rem;
+            border-left: 2px solid rgba(255,255,255,0.3);
+            margin-top: 2rem;
+            line-height: 1.6;
+        }
+
+        /* Auto-rotating artwork showcase */
+        .artwork-showcase {
+            padding: 5rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .artwork-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+
+        .artwork-card {
+            background: #0f0f0f;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: all 0.4s ease;
+        }
+
+        .artwork-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+            border-color: rgba(255,255,255,0.2);
+        }
+
+        .artwork-carousel {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3;
+            overflow: hidden;
+            background: #0a0a0a;
+        }
+
+        .artwork-carousel img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            opacity: 0;
+            transition: opacity 0.8s ease-in-out;
+        }
+
+        .artwork-carousel img.active {
+            opacity: 1;
+        }
+
+        .artwork-info {
+            padding: 1.5rem;
+        }
+
+        .artwork-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .artwork-info p {
+            font-size: 0.9rem;
+            opacity: 0.7;
+            line-height: 1.6;
+            margin-bottom: 0.5rem;
+        }
+
+        .artwork-angles {
+            display: flex;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .angle-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .angle-dot.active {
+            background: #ffffff;
+            width: 24px;
+            border-radius: 4px;
+        }
+
         .video-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -261,7 +429,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            background: #000;
         }
 
         .gallery {
@@ -293,6 +462,8 @@
             display: block;
             transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
             filter: grayscale(10%);
+            object-fit: contain;
+            background: #0f0f0f;
         }
 
         .gallery-item:hover img {
@@ -348,8 +519,9 @@
         .grid-item img, .grid-item video {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
             transition: transform 0.5s ease;
+            background: #0a0a0a;
         }
 
         .grid-item:hover img, .grid-item:hover video {
@@ -531,7 +703,8 @@
         .carousel-item img {
             width: 100%;
             height: 100%;
-            object-fit: cover;
+            object-fit: contain;
+            background: #0a0a0a;
         }
 
         @keyframes scroll {
@@ -732,6 +905,33 @@
             footer {
                 padding: 2.5rem 5%;
             }
+            .artwork-showcase {
+                padding: 3rem 5%;
+            }
+            .artwork-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .artist-section {
+                padding: 3rem 5%;
+            }
+            .artist-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .artist-content h2 {
+                font-size: 2rem;
+            }
+            .artist-content h3 {
+                font-size: 0.9rem;
+            }
+            .artist-content p {
+                font-size: 0.95rem;
+            }
+            .artist-quote {
+                font-size: 1.1rem;
+                padding-left: 1.5rem;
+            }
         }
 
         @media (min-width: 481px) and (max-width: 768px) {
@@ -817,6 +1017,23 @@
                 flex: 0 0 320px;
                 height: 420px;
             }
+            .artwork-showcase {
+                padding: 4rem 5%;
+            }
+            .artwork-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2.5rem;
+            }
+            .artist-section {
+                padding: 4rem 5%;
+            }
+            .artist-container {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .artist-content h2 {
+                font-size: 2.5rem;
+            }
         }
 
         @media (min-width: 769px) and (max-width: 1024px) {
@@ -893,6 +1110,170 @@
                 font-size: 4rem;
             }
         }
+
+        /* Reels Grid Section */
+        .reels-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .reel-item {
+            position: relative;
+            aspect-ratio: 9/16;
+            overflow: hidden;
+            border-radius: 12px;
+            cursor: pointer;
+            background: #000;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .reel-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+        }
+
+        .reel-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .reel-item:hover video {
+            transform: scale(1.05);
+        }
+
+        .reel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.8) 0%, transparent 50%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 1.5rem;
+            opacity: 1;
+            transition: opacity 0.3s ease;
+        }
+
+        .reel-item.playing .reel-overlay {
+            opacity: 0;
+        }
+
+        .reel-item.playing:hover .reel-overlay {
+            opacity: 1;
+        }
+
+        .reel-info h3 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.3rem;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+            color: #fff;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            letter-spacing: 1px;
+        }
+
+        .reel-info p {
+            font-size: 0.85rem;
+            color: #fff;
+            opacity: 0.9;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+            font-weight: 300;
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            color: #fff;
+            opacity: 0.9;
+            text-shadow: 0 4px 15px rgba(0,0,0,0.8);
+            transition: all 0.3s ease;
+            pointer-events: none;
+        }
+
+        .reel-item:hover .play-icon {
+            transform: translate(-50%, -50%) scale(1.2);
+            opacity: 1;
+        }
+
+        .reel-item.playing .play-icon {
+            opacity: 0;
+        }
+
+        .reel-progress {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: rgba(255,255,255,0.3);
+            overflow: hidden;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .reel-item.playing .reel-progress {
+            opacity: 1;
+        }
+
+        .progress-bar {
+            height: 100%;
+            width: 0;
+            background: #fff;
+            transition: width 0.1s linear;
+        }
+
+        .reel-item.playing .progress-bar {
+            animation: reelProgress 8s linear forwards;
+        }
+
+        @keyframes reelProgress {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .reels-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+            }
+            
+            .reel-info h3 {
+                font-size: 1.1rem;
+            }
+            
+            .reel-info p {
+                font-size: 0.8rem;
+            }
+            
+            .play-icon {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .reels-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .reel-item {
+                aspect-ratio: 9/16;
+                max-width: 400px;
+                margin: 0 auto;
+            }
+        }
     </style>
 </head>
 <body>
@@ -901,9 +1282,10 @@
             <div class="logo">Kajal's Art</div>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#artist">Artist</a></li>
+                <li><a href="#showcase">Artwork Showcase</a></li>
                 <li><a href="#videos">Videos</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="menu-toggle" id="menuToggle">
@@ -944,21 +1326,211 @@
         </div>
     </section>
 
-    <section class="section" id="videos">
-        <h2 class="section-title">Artist Spotlight</h2>
-        <div class="video-grid">
-            <div class="video-container">
-                <video controls poster="./media/art4a_thumbnail.png">
-                    <source src="./media/art4b.mp4" type="video/mp4">
-                </video>
+    <section class="artwork-showcase" id="showcase">
+        <h2 class="section-title">Artwork Showcase</h2>
+        <div class="artwork-grid">
+            <!-- Artwork 1 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="1">
+                    <img src="./media/art1a.jpg" alt="Artwork 1 - Angle 1" class="active">
+                    <img src="./media/art1b.jpg" alt="Artwork 1 - Angle 2">
+                    <img src="./media/art1c.jpg" alt="Artwork 1 - Angle 3">
+                    <img src="./media/art1d.jpg" alt="Artwork 1 - Angle 4">
+                    <img src="./media/art1n.jpg" alt="Artwork 1 - Angle 5">
+                </div>
+                <div class="artwork-info">
+                    <h3>Ethereal Landscapes</h3>
+                    <p>Mixed media on canvas exploring natural forms and organic textures.</p>
+                    
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                        <span class="angle-dot" data-index="2"></span>
+                        <span class="angle-dot" data-index="3"></span>
+                        <span class="angle-dot" data-index="4"></span>
+                    </div>
+                </div>
             </div>
-            <div class="video-container">
-                <video controls poster="./media/art4a_thumbnail.png">
-                    <source src="./media/art4a.mp4" type="video/mp4">
-                </video>
+
+            <!-- Artwork 2 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="2">
+                    <img src="./media/art1f.jpg" alt="Artwork 1 - Angle 1">
+                    <img src="./media/art1g.jpg" alt="Artwork 1 - Angle 2">
+                    <img src="./media/art1h.jpg" alt="Artwork 1 - Angle 3">
+                    <img src="./media/art1i.jpg" alt="Artwork 1 - Angle 4">
+                    <img src="./media/art1e.jpg" alt="Artwork 2 - Angle 5">
+                    <img src="./media/art1j.jpg" alt="Artwork 2 - Angle 6">
+                    <img src="./media/art1k.jpg" alt="Artwork 2 - Angle 7">
+                    <img src="./media/art1l.jpg" alt="Artwork 2 - Angle 8">
+                    <img src="./media/art1m.jpg" alt="Artwork 2 - Angle 9">
+                </div>
+                <div class="artwork-info">
+                    <h3>Urban Symphony</h3>
+                    <p>Contemporary acrylic piece capturing the rhythm of city life.</p>
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                        <span class="angle-dot" data-index="2"></span>
+                        <span class="angle-dot" data-index="3"></span>
+                        <span class="angle-dot" data-index="4"></span>
+                        <span class="angle-dot" data-index="5"></span>
+                        <span class="angle-dot" data-index="6"></span>
+                        <span class="angle-dot" data-index="7"></span>
+                        <span class="angle-dot" data-index="8"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 3 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="3">
+                    <img src="./media/art2a.jpg" alt="Artwork 3 - Angle 1" class="active">
+                    <img src="./media/art2b.jpg" alt="Artwork 3 - Angle 2">
+                    <img src="./media/art2c.jpg" alt="Artwork 3 - Angle 3">
+                    <img src="./media/art2d.jpg" alt="Artwork 3 - Angle 4">
+                    <img src="./media/art2e.jpg" alt="Artwork 3 - Angle 5">
+                    <img src="./media/art2f.jpg" alt="Artwork 3 - Angle 6">
+                </div>
+                <div class="artwork-info">
+                    <h3>Dreamscape Reflections</h3>
+                    <p>Oil on canvas exploring subconscious imagery and surreal elements.</p>
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                        <span class="angle-dot" data-index="2"></span>
+                        <span class="angle-dot" data-index="3"></span>
+                        <span class="angle-dot" data-index="4"></span>
+                        <span class="angle-dot" data-index="5"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 4 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="4">
+                    <img src="./media/art3a.jpg" alt="Artwork 4 - Angle 1" class="active">
+                    <img src="./media/art3b.jpg" alt="Artwork 4 - Angle 2">
+                </div>
+                <div class="artwork-info">
+                    <h3>Chromatic Harmonies</h3>
+                    <p>Vibrant abstract composition exploring color theory and balance.</p>
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 5 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="5">
+                    <img src="./media/art12157.jpg" alt="Artwork 5 - Angle 1" class="active">
+                    <img src="./media/art12155.jpg" alt="Artwork 4 - Angle 2">
+                </div>
+                <div class="artwork-info">
+                    <h3>Twilight Serenity</h3>
+                    <p>Impressionistic landscape capturing the magic of golden hour.</p>
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Artwork 6 -->
+            <div class="artwork-card">
+                <div class="artwork-carousel" data-artwork="6">
+                    <img src="./media/art12156.jpg" alt="Artwork 6 - Angle 1" class="active">
+                    <img src="./media/art12158.jpg" alt="Artwork 6 - Angle 2">
+                    <img src="./media/art12159.jpg" alt="Artwork 6 - Angle 3">
+                    <img src="./media/art1214d.png" alt="Artwork 6 - Angle 4">
+                </div>
+                <div class="artwork-info">
+                    <h3>Metamorphosis</h3>
+                    <p>Mixed media exploration of transformation and growth.</p>
+                    <div class="artwork-angles">
+                        <span class="angle-dot active" data-index="0"></span>
+                        <span class="angle-dot" data-index="1"></span>
+                        <span class="angle-dot" data-index="2"></span>
+                        <span class="angle-dot" data-index="3"></span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="section" id="videos">
+        <h2 class="section-title">Artist Spotlight</h2>
+        <div class="reels-grid">
+            <div class="reel-item">
+                <video loop muted playsinline>
+                    <source src="./media/art4b.mp4" type="video/mp4">
+                </video>
+                <div class="reel-overlay">
+                    <div class="reel-info">
+                        <h3>Creating Magic</h3>
+                        <p>Behind the scenes</p>
+                    </div>
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="reel-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            
+            <div class="reel-item">
+                <video loop muted playsinline>
+                    <source src="./media/art4a.mp4" type="video/mp4">
+                </video>
+                <div class="reel-overlay">
+                    <div class="reel-info">
+                        <h3>Studio Sessions</h3>
+                        <p>Exploring techniques</p>
+                    </div>
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="reel-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            
+            <div class="reel-item">
+                <video loop muted playsinline>
+                    <source src="./media/art4c.mp4" type="video/mp4">
+                </video>
+                <div class="reel-overlay">
+                    <div class="reel-info">
+                        <h3>Inspiration</h3>
+                        <p>Finding beauty</p>
+                    </div>
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="reel-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            
+            <div class="reel-item">
+                <video loop muted playsinline>
+                    <source src="./media/art4d.mp4" type="video/mp4">
+                </video>
+                <div class="reel-overlay">
+                    <div class="reel-info">
+                        <h3>Process</h3>
+                        <p>Step by step</p>
+                    </div>
+                    <div class="play-icon">▶</div>
+                </div>
+                <div class="reel-progress">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+
 
     <section class="section" id="gallery">
         <h2 class="section-title">Featured Collection</h2>
@@ -1006,24 +1578,17 @@
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="./media/" alt="Abstract">
+                <img src="./media/art12151.jpg" alt="Abstract">
                 <div class="gallery-overlay">
                     <h3>Transcendence</h3>
                     <p>Acrylic on Canvas, 2024</p>
                 </div>
             </div>
             <div class="gallery-item">
-                <img src="./media/" alt="Modern">
+                <img src="./media/art12157.jpg" alt="Modern">
                 <div class="gallery-overlay">
                     <h3>Geometric Harmony</h3>
                     <p>Mixed Media, 2024</p>
-                </div>
-            </div>
-            <div class="gallery-item">
-                <img src="./media/" alt="Portrait Art">
-                <div class="gallery-overlay">
-                    <h3>Inner Light</h3>
-                    <p>Photography, 2024</p>
                 </div>
             </div>
         </div>
@@ -1066,20 +1631,20 @@
     <div class="split-section">
         <div class="split-item">
             <video autoplay muted loop>
-                <source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                <source src="./media/art4a.mp4" type="video/mp4">
             </video>
             <div class="split-overlay">
                 <h3>Motion & Light</h3>
             </div>
         </div>
         <div class="split-item">
-            <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?w=800" alt="Sculpture">
+            <img src="./media/art5.jpg" alt="Sculpture">
             <div class="split-overlay">
                 <h3>Form & Texture</h3>
             </div>
         </div>
     </div>
-
+<!---
     <section class="section">
         <h2 class="section-title">Animated Art</h2>
         <div class="gif-showcase">
@@ -1106,13 +1671,25 @@
             </div>
         </div>
     </section>
+-->
 
-    <div class="parallax-section" style="background-image: url('https://images.unsplash.com/photo-1578301978162-7aae4d755744?w=1600');">
-        <div class="parallax-content">
-            <h2>Experience Art Differently</h2>
-            <p>Join us for exclusive exhibitions and artist talks</p>
+    <section class="artist-section" id="artist">
+        <div class="artist-container">
+            <div class="artist-image-wrapper">
+                <img src="./media/its_me.png" alt="Kajal - Artist Portrait">
+            </div>
+            <div class="artist-content">
+                <h2>Kajal Dahiya</h2>
+                <h3>Contemporary Artist</h3>
+                <p>Kajal is a visionary contemporary artist whose work explores the intersection of emotion, color, and form. With a unique perspective that bridges traditional techniques with modern expression, her art captivates viewers and invites them into a world of profound visual storytelling.</p>
+                <p>Her journey as an artist began with a deep fascination for how light and shadow dance across different mediums. Over the years, she has developed a distinctive style that combines bold color palettes with intricate details, creating pieces that resonate on both aesthetic and emotional levels.</p>
+                <p>Each artwork is a testament to her dedication to pushing creative boundaries while maintaining an authentic connection to the viewer's experience.</p>
+                <div class="artist-quote">
+                    "Art is not what you see, but what you make others see through your vision."
+                </div>
+            </div>
         </div>
-    </div>
+    </section>
 
     <section class="section">
         <h2 class="section-title">Infinite Gallery</h2>
@@ -1137,7 +1714,7 @@
         <img id="lightboxImg" src="" alt="Enlarged view">
     </div>
 
-    <footer>
+    <footer id="contact">
         <p>&copy; 2024 Artistry Gallery. All Rights Reserved.</p>
     </footer>
 
@@ -1253,12 +1830,176 @@
             });
         }, observerOptions);
 
-        document.querySelectorAll('.section, .full-width-feature, .split-section, .parallax-section').forEach(el => {
+        document.querySelectorAll('.section, .full-width-feature, .split-section, .parallax-section, .artist-section, .artwork-showcase').forEach(el => {
             el.style.opacity = '0';
             el.style.transform = 'translateY(30px)';
             el.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
             observer.observe(el);
         });
+
+        // Auto-rotating artwork showcase
+        class ArtworkCarousel {
+            constructor(carouselElement) {
+                this.carousel = carouselElement;
+                this.images = this.carousel.querySelectorAll('img');
+                this.dots = this.carousel.closest('.artwork-card').querySelectorAll('.angle-dot');
+                this.currentIndex = 0;
+                this.autoRotateInterval = null;
+                
+                this.init();
+            }
+            
+            init() {
+                // Start auto-rotation
+                this.startAutoRotate();
+                
+                // Pause on hover
+                this.carousel.closest('.artwork-card').addEventListener('mouseenter', () => {
+                    this.stopAutoRotate();
+                });
+                
+                this.carousel.closest('.artwork-card').addEventListener('mouseleave', () => {
+                    this.startAutoRotate();
+                });
+                
+                // Manual navigation with dots
+                this.dots.forEach((dot, index) => {
+                    dot.addEventListener('click', () => {
+                        this.showImage(index);
+                        this.stopAutoRotate();
+                        setTimeout(() => this.startAutoRotate(), 3000);
+                    });
+                });
+            }
+            
+            showImage(index) {
+                // Remove active class from all images and dots
+                this.images.forEach(img => img.classList.remove('active'));
+                this.dots.forEach(dot => dot.classList.remove('active'));
+                
+                // Add active class to selected image and dot
+                this.images[index].classList.add('active');
+                this.dots[index].classList.add('active');
+                this.currentIndex = index;
+            }
+            
+            nextImage() {
+                const nextIndex = (this.currentIndex + 1) % this.images.length;
+                this.showImage(nextIndex);
+            }
+            
+            startAutoRotate() {
+                this.autoRotateInterval = setInterval(() => {
+                    this.nextImage();
+                }, 3000); // Change image every 3 seconds
+            }
+            
+            stopAutoRotate() {
+                if (this.autoRotateInterval) {
+                    clearInterval(this.autoRotateInterval);
+                    this.autoRotateInterval = null;
+                }
+            }
+        }
+        
+        // Initialize all artwork carousels
+        document.querySelectorAll('.artwork-carousel').forEach(carousel => {
+            new ArtworkCarousel(carousel);
+        });
+    </script>
+
+    <script>
+        // Reels Grid functionality
+        class ReelsGrid {
+            constructor() {
+                this.reels = document.querySelectorAll('.reel-item');
+                this.currentPlayingIndex = -1;
+                this.duration = 8000; // 8 seconds per reel
+                
+                this.init();
+            }
+            
+            init() {
+                this.reels.forEach((reel, index) => {
+                    const video = reel.querySelector('video');
+                    
+                    // Click to play
+                    reel.addEventListener('click', () => {
+                        if (this.currentPlayingIndex === index) {
+                            // Pause current
+                            this.pauseReel(index);
+                        } else {
+                            // Play this one
+                            this.playReel(index);
+                        }
+                    });
+                    
+                    // When video ends, play next
+                    video.addEventListener('ended', () => {
+                        this.playNextReel();
+                    });
+                });
+                
+                // Auto-play first reel after 1 second
+                setTimeout(() => {
+                    this.playReel(0);
+                }, 1000);
+            }
+            
+            playReel(index) {
+                // Pause any currently playing reel
+                if (this.currentPlayingIndex !== -1 && this.currentPlayingIndex !== index) {
+                    this.pauseReel(this.currentPlayingIndex);
+                }
+                
+                const reel = this.reels[index];
+                const video = reel.querySelector('video');
+                const progressBar = reel.querySelector('.progress-bar');
+                
+                reel.classList.add('playing');
+                video.currentTime = 0; // Reset to start
+                video.play();
+                
+                // Reset and animate progress bar
+                progressBar.style.animation = 'none';
+                progressBar.offsetHeight; // Force reflow
+                progressBar.style.animation = 'reelProgress 8s linear forwards';
+                
+                this.currentPlayingIndex = index;
+                
+                // Set timeout to play next reel after 8 seconds
+                setTimeout(() => {
+                    if (this.currentPlayingIndex === index) {
+                        this.playNextReel();
+                    }
+                }, this.duration);
+            }
+            
+            pauseReel(index) {
+                const reel = this.reels[index];
+                const video = reel.querySelector('video');
+                const progressBar = reel.querySelector('.progress-bar');
+                
+                reel.classList.remove('playing');
+                video.pause();
+                video.currentTime = 0;
+                progressBar.style.animation = 'none';
+                
+                if (this.currentPlayingIndex === index) {
+                    this.currentPlayingIndex = -1;
+                }
+            }
+            
+            playNextReel() {
+                if (this.currentPlayingIndex === -1) return;
+                
+                const nextIndex = (this.currentPlayingIndex + 1) % this.reels.length;
+                this.playReel(nextIndex);
+            }
+        }
+
+        // Initialize reels grid
+        const reelsGrid = new ReelsGrid();
     </script>
 </body>
 </html>
